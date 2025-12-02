@@ -40,6 +40,22 @@ int rec(int level,int weight_taken){
    return dp[level][weight_taken] = ans;
 }
 
+void generate() {
+    int current_weight = 0;
+    cout << "Items taken in the optimal solution:" << endl;
+    for (int level = 0; level < n; ++level) {
+        // We check if taking the current item was the optimal choice.
+        // The optimal value from the current state is rec(level, current_weight).
+        // The value if we skip item 'level' is rec(level + 1, current_weight).
+        // If they are different, it implies taking item 'level' was the necessary and better choice.
+        // These rec() calls are O(1) because the dp table is already filled.
+        if (rec(level, current_weight) != rec(level + 1, current_weight)) {
+            cout << "Item " << level << " (weight: " << w[level] << ", value: " << v[level] << ")" << endl;
+            current_weight += w[level];
+        }
+    }
+}
+
 void solve(){
   cin>>n>>W;
  for(int i=0;i<n;i++){
@@ -47,6 +63,7 @@ void solve(){
  }
  memset(dp,-1,sizeof(dp));
  cout<<rec(0,0)<<endl;
+ generate();
 }
 
 signed main()

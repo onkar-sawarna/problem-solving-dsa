@@ -3,6 +3,11 @@
 
 // You have X time and K slots --> Find max skill gain you can get
 
+//Tc : O(n*x*k) ((#S)(1+Average # of Transitions per state)) 
+//i.e n*x*k states and 2 transitions per state O(N*x*k)(1+2) 
+
+//Sc : O(n*x*k) + O(n) for recursion stack
+
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \
