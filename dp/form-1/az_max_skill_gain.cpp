@@ -1,13 +1,13 @@
-// In AZ DP Workshop --> N problems where ith problem --- {Ti  Si} 
-// Ti is time taken and Si is skill gained
+/*
+ Problem Statement: Given N problems, where the ith problem takes Ti time and gives Si skill points.
+ You have a total of X time and can solve at most K problems.
+ Find the maximum skill gain you can achieve.
 
-// You have X time and K slots --> Find max skill gain you can get
-
-//Tc : O(n*x*k) ((#S)(1+Average # of Transitions per state)) 
-//i.e n*x*k states and 2 transitions per state O(N*x*k)(1+2) 
-
-//Sc : O(n*x*k) + O(n) for recursion stack
-
+ Problem Source: Variation of 0/1 Knapsack problem, inspired by AZ DP Workshop.
+ 
+ TC: O(N * X * K)
+ SC: O(N * X * K)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

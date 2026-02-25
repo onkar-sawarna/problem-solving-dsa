@@ -1,3 +1,18 @@
+ /*
+ Problem Statement: Given N bricks and M colors,
+ find the number of ways to color the bricks such that 
+ there are exactly K positions where adjacent bricks have different colors.
+ (Bricks are arranged in a line and are 1-indexed)
+ Each brick can be colored with any of the M colors.
+
+ constraints:
+ 1 <= N <= 2000
+ 1 <= M <= 2000
+ 0 <= K < N 
+
+ Problem Source: AZ Coding Contest 2023 (https://codeforces.com/contest/1811)
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -43,6 +58,11 @@ int rec(int i, int j) {
         return dp[i][j];
     }
     //4. transition/compute
+    // Case 1: The ith brick has the same color as (i-1)th brick
+    // So, the number of different positions remains j
+    // Case 2: The ith brick has a different color than (i-1)
+    // So, the number of different positions reduces by 1 (j-1)
+    // And we have (M_colors - 1) choices for coloring the ith brick
     int ans = 0;
     ans = (ans + rec(i - 1, j)) % MOD;
     ans = (ans + (rec(i - 1, j - 1) * (M_colors - 1)) % MOD) % MOD;

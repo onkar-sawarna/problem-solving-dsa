@@ -1,3 +1,8 @@
+// Problem Statement: Two players play a game where they take turns removing
+//  a number of stones from a pile. On each turn, a player can remove any
+//  power of two number of stones (1, 2, 4, 8, ...).
+// The player who cannot make a move (because there are no stones left) loses.
+// Given the initial number of stones x, determine if the first player has a winning strategy.  
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

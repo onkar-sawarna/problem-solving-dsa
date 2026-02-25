@@ -1,3 +1,10 @@
+/*
+ Problem Statement: You are climbing a staircase. It takes n steps to reach the top.
+ Each time you can either climb 1, 2, or 3 steps.
+ In how many distinct ways can you climb to the top?
+
+ Problem Source: Classic Dynamic Programming problem (variation of LeetCode #70).
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

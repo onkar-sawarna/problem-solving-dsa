@@ -1,3 +1,7 @@
+// Problem Statement: Given an integer n, return the number of binary strings of length n
+// that do not contain the subsequence "0100".
+// Problem Source: AZ Coding Contest 2023 (https://codeforces.com/contest/1811)
+
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

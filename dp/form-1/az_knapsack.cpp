@@ -1,3 +1,16 @@
+/*
+ Problem Statement: Given a set of items, each with a weight and a value,
+ determine the number of each item to include in a collection so that
+ the total weight is less than or equal to a given limit and the total value is as large as possible.
+ You cannot take a fraction of an item.
+ 
+ Constraints:
+ 1 <= N <= 100
+ 1 <= W <= 10^5
+ 1 <= weight[i], value[i] <= 10^4
+
+ Problem Source: Classic 0/1 Knapsack Problem.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

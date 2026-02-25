@@ -1,3 +1,9 @@
+/*
+ Problem Statement: Given an integer array nums, return the length of the
+ longest strictly increasing subsequence.
+
+ Problem Source: Classic Dynamic Programming problem (LeetCode #300).
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

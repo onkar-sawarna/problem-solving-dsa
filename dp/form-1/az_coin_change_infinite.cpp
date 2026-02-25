@@ -1,3 +1,11 @@
+/*
+ Problem Statement: You are given an integer array of coins of different denominations
+ and an integer amount representing a total amount of money.
+ Return true if the amount can be made up by any combination of the coins.
+ You may assume that you have an infinite number of each kind of coin.
+
+ Problem Source: Classic Unbounded Knapsack/Coin Change problem.
+*/
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

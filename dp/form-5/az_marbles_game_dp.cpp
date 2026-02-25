@@ -31,7 +31,7 @@ int rec(int x,int y){
         if(rec(m,y) == 0){
             ans = 1;
             break;
-        }
+        }z
     }
     for(int m=0;m<y;m++){
         if(rec(x,m) == 0){

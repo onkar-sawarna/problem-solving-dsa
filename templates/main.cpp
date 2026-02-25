@@ -28,3 +28,10 @@ signed main()
     }
     return 0;
 }
+
+
+// cpptemplate in cpp.json
+// command + shift + p  ->  Insert Snippet  -> C++: cpptemplate
+
+// move all bin files to bin folder
+// command + shift + p -> run task -> move bin files to bin folder
