@@ -39,3 +39,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * |S|)
+// Space Complexity: O(|S|)
+// Pattern: Constructive - Letter reorder
+// explanation:
+/*
+A length-26 array counts the letters in s.
+The answer is rebuilt by writing every T, then every F, then every N.
+A pass over the other 23 letters appends whatever count remains for each of them.
+Letters already placed are skipped in that pass.
+The new string has the same length as s.
+*/

@@ -41,3 +41,14 @@ using namespace std;
         solve();
         return 0;
     }
+
+// Time Complexity: O(n log (t * arr[0]))
+// Space Complexity: O(n)
+// Pattern: Binary search on answer - Factory time
+// explanation:
+/*
+lo starts at 0 and hi starts at t times arr[0].
+check walks the machines and adds mid / arr[i] products, returning as soon as the total reaches t.
+A mid that produces enough products moves hi to mid - 1 and stores ans.
+A mid that falls short moves lo to mid + 1.
+*/

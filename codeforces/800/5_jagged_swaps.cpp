@@ -37,3 +37,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Leading one
+// explanation:
+/*
+The whole array is read, then only a[0] is tested.
+When that first cell is 1, the answer is Yes.
+Any other leading value prints No.
+The later elements do not change that branch.
+*/

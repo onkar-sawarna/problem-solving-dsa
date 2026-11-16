@@ -42,3 +42,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Sign balance
+// explanation:
+/*
+The read loop counts -1 values in minus and +1 values in plus.
+The while loop runs while negatives outnumber positives or the negative count is odd.
+Each step flips one -1 into +1, which moves both counters by one and adds one move.
+The loop stops once minus is at most plus and minus is even.
+*/

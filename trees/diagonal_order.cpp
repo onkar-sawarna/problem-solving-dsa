@@ -81,3 +81,14 @@ int main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Diagonal walk - Right then left
+// explanation:
+/*
+current_diagonal begins with the root.
+Inside a diagonal, the inner loop steps from a node along right children and records each value.
+A left child is pushed into next_diagonal instead of being walked now.
+When current_diagonal is empty the two queues are swapped, and the finished diagonals are reversed at the end.
+*/

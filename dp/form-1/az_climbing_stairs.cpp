@@ -66,3 +66,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level] is the number of ways to climb from step level up to step n.
+From level the transition adds a climb of 1, 2, or 3 steps, provided the landing step is still within n.
+Landing exactly on n counts as one way. A level above n counts as zero ways.
+The table has one cell per step and each cell tries three step sizes.
+*/

@@ -73,3 +73,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - Fixed length distinct
+// explanation:
+/*
+head advances while the window is shorter than d, and freq counts values inside it.
+The first time a value appears, distinct_count increases.
+When head - tail + 1 equals d, min_penalty keeps the smaller distinct count.
+tail decrements freq[arr[tail]] and steps forward, and a count that hits 0 lowers distinct_count.
+*/

@@ -41,3 +41,14 @@
 //     }
 //     return ans;
 // }
+
+// Time Complexity: O(n log (high - low))
+// Space Complexity: O(1)
+// Pattern: Binary search on answer - Bouquet day
+// explanation:
+/*
+low and high start at the earliest and latest values in bloomDay.
+Each mid is a candidate day, and canMakeBouquets scans bloomDay from left to right.
+A flower already bloomed extends the adjacent run, and a run of length k completes one bouquet and resets the run.
+A day that builds at least m bouquets moves high to mid - 1, otherwise low moves to mid + 1.
+*/

@@ -51,3 +51,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: Kahn - Topological sort
+// explanation:
+/*
+Every node whose indegree is 0 is pushed into the queue.
+Each popped node is appended to topo, then each neighbor's indegree drops by one.
+A neighbor is pushed when its indegree reaches 0.
+If topo ends up shorter than n, some nodes were never freed and the graph has a cycle.
+*/

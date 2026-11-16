@@ -78,3 +78,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - Sum at most K
+// explanation:
+/*
+head advances while current_sum plus arr[head + 1] is still at most k.
+ans adds head - tail + 1, the subarrays that start at tail and end anywhere up to head.
+tail subtracts arr[tail] from current_sum and steps forward.
+If tail moves past head, the window is empty and head is set back to tail - 1.
+*/

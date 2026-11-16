@@ -61,3 +61,14 @@ int main()
 
     return 0;
 }
+
+// Time Complexity: O(n!)
+// Space Complexity: O(n)
+// Pattern: Backtracking - N Queens
+// explanation:
+/*
+The search places one queen in every row.
+A column is kept only when check finds no earlier queen in that column or on either diagonal.
+Row 0 tries n columns and later rows try fewer, which is the n! queens bound.
+The queens vector and the stack have length n, and each finished board is copied into allsol.
+*/

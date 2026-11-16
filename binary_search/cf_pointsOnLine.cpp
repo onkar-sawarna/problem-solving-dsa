@@ -29,3 +29,14 @@ using namespace std;
         solve();
         return 0;
     }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Binary search on index - Distance triples
+// explanation:
+/*
+For each left index i, upper_bound finds the first position in arr strictly greater than arr[i] + d.
+Subtracting i + 1 leaves feasible, the count of later points that still lie within distance d.
+ans adds feasible * (feasible - 1) / 2, the triples that use i as the leftmost point.
+i then steps forward and upper_bound runs again from that new left endpoint.
+*/

@@ -48,3 +48,15 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(T)
+// Space Complexity: O(1)
+// Pattern: Math - Divisor scan
+// explanation:
+/*
+k runs from 1 to 18 and power_of_10 walks through 10, 100, up to 10^18.
+The trial divisor is 1 + 10^k. When it divides n, x = n / divisor is kept only if x % 10 is not 0.
+A set stores those x values, so the same x found for two different k is stored once.
+The set is printed from smallest to largest.
+Eighteen iterations and a set of at most eighteen integers make each test constant work.
+*/

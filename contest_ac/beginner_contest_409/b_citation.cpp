@@ -43,3 +43,15 @@ using vvi = vector<vi>;          // Alias for vector<vector<long long>>
         solve();
         return 0;
     }
+
+// Time Complexity: O(N^2)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Citation sweep
+// explanation:
+/*
+A map counts how many papers share each citation value.
+x then runs from 0 through n.
+For a fixed x the inner loop adds frequencies of keys that are >= x.
+x is recorded whenever that total is at least x, and the increasing scan leaves max_x at the largest success.
+Distinct keys are at most n, so the nested scans are quadratic when every citation value differs.
+*/

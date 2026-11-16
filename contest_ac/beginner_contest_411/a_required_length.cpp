@@ -29,3 +29,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(|P|)
+// Space Complexity: O(|P|)
+// Pattern: Math - Length check
+// explanation:
+/*
+The password string and the limit l are read.
+The decision compares p.size() with l.
+A string at least that long prints Yes.
+A shorter string prints No.
+The stored data is the password itself.
+*/

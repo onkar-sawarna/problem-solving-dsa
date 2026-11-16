@@ -53,3 +53,14 @@ signed main()
    
    return 0;
 }
+
+// Time Complexity: O(t log b)
+// Space Complexity: O(1)
+// Pattern: Number Theory - Binary exponentiation
+// explanation:
+/*
+main prints a^b mod 1000000007 for each of t pairs, using iterativeBinpow.
+Each bit of b either multiplies the answer by the base or skips, then the base is squared and b is halved.
+inverse raises b to mod-2 with that same loop, and nCr scans three factorials, but main calls neither.
+Only a few integers are stored.
+*/

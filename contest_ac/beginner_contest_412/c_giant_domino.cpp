@@ -72,3 +72,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * N log N)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Size-ordered BFS
+// explanation:
+/*
+Dominoes sit in a set ordered by size. dist[1] starts at 1, and domino 1 is removed from the set before the search.
+BFS pops a domino and may topple any remaining domino whose size is at most twice the current size.
+The set is walked from the smallest size; fits are erased, given dist[current] + 1, and queued.
+The walk stops at the first size that is too large, so each domino is inserted once and erased at most once.
+dist[N] is printed when it was set, and -1 is printed when domino N was never reached.
+*/

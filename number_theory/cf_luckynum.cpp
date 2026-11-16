@@ -26,3 +26,15 @@ signed main() {
     solve();
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(1)
+// Pattern: Number Theory - Sum of powers of two
+// explanation:
+/*
+The loop adds 2^1 + 2^2 + ... + 2^n.
+Each term is computed from scratch by iterative binary exponentiation, which is O(log i) for exponent i.
+Summing that cost from 1 to n is O(n log n).
+The closed form 2^(n+1) - 2 is not used.
+Only the running sum and the power routine's locals are stored.
+*/

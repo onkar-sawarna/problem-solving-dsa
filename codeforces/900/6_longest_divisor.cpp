@@ -32,3 +32,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(d)
+// Space Complexity: O(1)
+// Pattern: Math - Divisor prefix
+// explanation:
+/*
+i starts at 1 and advances while n % i is 0.
+d is that first i which does not divide n, so the loop body runs d times.
+The longest prefix of divisors is i - 1, which is what gets printed.
+No array is stored; n and i are enough.
+*/

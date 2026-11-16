@@ -64,3 +64,14 @@ signed main()
     solve();
     return 0;
 }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: DFS - Topological order
+// explanation:
+/*
+rec walks outgoing edges once and stores the longest path from that node in dp.
+A second pass runs dfs from every unvisited node and pushes the node after its children.
+Reversing topo turns those finishing times into a forward order.
+Each node and each edge of g is visited a constant number of times across both walks.
+*/

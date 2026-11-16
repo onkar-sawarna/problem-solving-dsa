@@ -40,3 +40,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n^2 log n)
+// Space Complexity: O(n^2)
+// Pattern: Meet in the Middle - Pair sums
+// explanation:
+/*
+As b moves downward, a asks whether x - arr[a] - arr[b] is already stored as a pair sum.
+After those checks, every pair (b, d) with d > b is inserted into the map.
+std::map keeps the sums ordered, so each lookup and insert adds an O(log n) factor on top of the pair enumeration.
+Distinct pair sums can fill the map with O(n^2) keys.
+A hit prints YES immediately; if the loops finish, the code prints NO.
+*/

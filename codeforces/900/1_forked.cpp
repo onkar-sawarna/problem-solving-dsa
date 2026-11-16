@@ -51,3 +51,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Brute Force - Shared attacks
+// explanation:
+/*
+Four sign pairs build every (a, b) and (b, a) landing square around the king and the queen.
+Each set holds at most eight cells, and a repeated square from a == b is stored once.
+The king cells are then probed in the queen set.
+ans is the number of cells that appear in both sets.
+*/

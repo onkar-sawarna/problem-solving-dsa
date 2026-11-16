@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Math - Offset gcd
+// explanation:
+/*
+k must divide every distance from a value to its target index.
+The running gcd starts at |a[0] - 1| and folds in |a[i] - (i + 1)| for each later i.
+A fixed point adds a 0 offset and leaves the gcd unchanged.
+The value printed after the single pass is that gcd.
+*/

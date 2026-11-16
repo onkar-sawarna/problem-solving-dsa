@@ -48,3 +48,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Prefix Maxima - Trapping Rain Water
+// explanation:
+/*
+left[i] stores the tallest bar on the prefix ending at i.
+right[i] stores the tallest bar on the suffix starting at i, filled from the other end in the same loop.
+Water above index i is the lower of those two maxima minus height[i], and those gaps are summed.
+The two auxiliary arrays are the extra memory.
+*/

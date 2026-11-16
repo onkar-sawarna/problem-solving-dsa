@@ -36,3 +36,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * N)
+// Space Complexity: O(N)
+// Pattern: Math - Positive difference
+// explanation:
+/*
+Both arrays are stored in full.
+result starts at 1.
+The loop adds a[i] - b[i] only where a[i] is strictly larger than b[i].
+Indices with a[i] <= b[i] contribute nothing.
+That total is printed.
+*/

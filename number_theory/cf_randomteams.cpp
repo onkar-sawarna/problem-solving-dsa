@@ -24,3 +24,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Team pair extremes
+// explanation:
+/*
+n students are placed in m teams, and each team of size s contributes s*(s-1)/2 pairs.
+The minimum uses q = n/m and r = n%m, so r teams have size q+1 and the rest have size q.
+The maximum puts n-m+1 students in one team and one student in every other team.
+Both answers are direct arithmetic. No team list is built.
+*/

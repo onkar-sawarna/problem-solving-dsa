@@ -46,3 +46,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N^2 * L * log N)
+// Space Complexity: O(N^2 * L)
+// Pattern: Brute Force - All ordered pairs
+// explanation:
+/*
+i and j both run over the n strings, and the case i == j is skipped.
+Each remaining pair is concatenated and inserted into a set.
+Equal concatenations collapse to one entry.
+The printed number is the size of that set.
+L is one input string length; storing and comparing a concatenation scales with L and with the logarithm of the set.
+*/

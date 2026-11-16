@@ -22,3 +22,14 @@ signed main(){
     cout<<ans<<"\n";
     return 0;
 }
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(1)
+// Pattern: Contribution - Inversion Weight
+// explanation:
+/*
+Every pair i < j with arr[i] greater than arr[j] is one inversion.
+A subarray contains that pair when its left end is in 0..i and its right end is in j..n-1.
+The number of those subarrays is (i+1)*(n-j), and that weight is added for the pair.
+The nested loops visit every pair, so the time is quadratic. Only a few integers are extra.
+*/

@@ -52,3 +52,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(m)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State memo[s] is the fewest coins that add up to sum s.
+The transition tries every coin and keeps the smallest value of 1 plus the state of s minus that coin, when that remainder can be made.
+Sum 0 costs 0 coins. A negative sum is impossible and returns LLONG_MAX.
+When every coin fails, the stored value stays LLONG_MAX and the program prints -1.
+There is one state for each sum up to m, each state loops over the n coins, and the table is a single row of those sums.
+*/

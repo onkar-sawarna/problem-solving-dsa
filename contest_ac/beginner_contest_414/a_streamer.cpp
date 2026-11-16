@@ -38,3 +38,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)
+// Pattern: Brute Force - Interval cover
+// explanation:
+/*
+Each of the n streamers is read as a range [x, y].
+The counter increases when x <= l and y >= r, which means the range covers the whole segment.
+Ranges are not stored.
+The loop touches each streamer once.
+The printed value is that counter.
+*/

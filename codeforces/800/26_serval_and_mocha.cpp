@@ -39,3 +39,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
+// Pattern: Brute Force - Pair gcd
+// explanation:
+/*
+The outer index i and the inner index j walk every unordered pair.
+flag is set when __gcd(a[i], a[j]) is at most 2.
+One such pair is enough, and the loops still finish the scan.
+flag still 0 after every pair prints No.
+*/

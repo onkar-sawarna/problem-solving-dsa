@@ -45,3 +45,14 @@ signed main(){
         cout << "\n";
     }
 }
+
+// Time Complexity: O(n * n!)
+// Space Complexity: O(n * n!)
+// Pattern: Backtracking - Frequency Permutations
+// explanation:
+/*
+The frequency map offers each distinct remaining value once at the current depth.
+With n distinct inputs the choices shrink from n down to 1, which is n! leaves.
+Each finished permutation is copied into allsols, and that copy is linear in n.
+The map and the path being built are O(n) beside the stored list of permutations.
+*/

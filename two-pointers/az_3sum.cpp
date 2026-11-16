@@ -75,3 +75,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N^2)
+// Space Complexity: O(N)
+// Pattern: Two pointers - 3Sum closest
+// explanation:
+/*
+A is sorted, then i fixes one value and a duplicate A[i] is skipped.
+left begins at i + 1 and right begins at N - 1.
+A sum below target advances left, and a sum above target retreats right, skipping a value equal to the one just passed.
+min_diff keeps the smallest absolute gap, and an exact hit returns 0 immediately.
+*/

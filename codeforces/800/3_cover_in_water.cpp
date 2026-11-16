@@ -49,3 +49,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Empty runs
+// explanation:
+/*
+empty grows on every cell that is not '#', and total counts those cells.
+A '#' closes the current run and stores it in maxi if it is longer.
+A final update keeps a run that reaches the end of the string.
+A longest run of 3 or more prints 2; a shorter run prints total, one operation per empty cell.
+*/

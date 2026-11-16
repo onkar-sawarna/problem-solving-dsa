@@ -27,3 +27,14 @@ using namespace std;
         cout<<ans<<"\n";
         return 0;
     }
+
+// Time Complexity: O(3^d)
+// Space Complexity: O(d)
+// Pattern: Backtracking - Digits 3 5 7
+// explanation:
+/*
+d is the number of digits of n.
+From the current number the search appends 3, 5, or 7, giving three branches and depth d.
+A number is counted when it is at most n and has already used all three digits.
+A value past n is not expanded, and the stack holds d frames.
+*/

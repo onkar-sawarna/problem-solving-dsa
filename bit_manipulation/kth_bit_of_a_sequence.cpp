@@ -41,3 +41,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(log k)
+// Space Complexity: O(1)
+// Pattern: Bit Groups - Kth Bit of the Stream
+// explanation:
+/*
+Positive integers are written in binary with no separators and grouped by bit length.
+The group of length len holds 2 to the power (len-1) numbers, and each number contributes len bits.
+The loop subtracts whole groups until k falls inside one length, so the iterations follow log k.
+That number is rebuilt and the chosen bit is shifted out. Only a few integers are stored.
+*/

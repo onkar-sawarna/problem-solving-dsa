@@ -52,3 +52,14 @@ signed main() {
     while (T--) solve();
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Kahn - Functional graph cycles
+// explanation:
+/*
+adj[i] is the single successor (i + 1 + a[i]) modulo n, and ind counts incoming edges.
+Every node with indegree 0 starts in the queue.
+Popping a node decreases the indegree of its successor, which is pushed if that count hits 0.
+The printed value is n minus how many nodes were removed, the nodes that remain on cycles.
+*/

@@ -63,3 +63,14 @@ vector<vector<int>> output;
             }
             return 0;
         }
+
+// Time Complexity: O(n * n!)
+// Space Complexity: O(n * n!)
+// Pattern: Backtracking - Index Permutations
+// explanation:
+/*
+The path takes one unused index at a time and marks it in the used array.
+The first position has n choices, the next has n-1, and so on, so the tree has n! leaves.
+Each leaf copies a length-n permutation into output.
+The used flags, the current path, and the call stack are linear, on top of the stored permutations.
+*/

@@ -41,3 +41,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Greedy - Extra press
+// explanation:
+/*
+c spare presses go one at a time, so an odd c leaves the extra press with the first player.
+In that case Second wins only when b > a; otherwise First wins, including a tie.
+An even c leaves the counts as given, so First wins only when a > b.
+A tie with even c goes to Second.
+*/

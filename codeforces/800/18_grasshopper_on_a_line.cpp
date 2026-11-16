@@ -35,3 +35,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Constructive - Safe jumps
+// explanation:
+/*
+A jump length divisible by k is forbidden.
+When x % k is nonzero, one jump of length x lands legally.
+When x is a multiple of k, that single jump is blocked.
+The code then prints two jumps, x - 1 and 1, which add to x and avoid the multiple.
+*/

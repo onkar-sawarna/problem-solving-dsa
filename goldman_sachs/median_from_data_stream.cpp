@@ -62,3 +62,14 @@ int main() {
 
     return 0;
 }
+
+// Time Complexity: O(log n) per insertion
+// Space Complexity: O(n)
+// Pattern: Two Heaps - Median Stream
+// explanation:
+/*
+The smaller half is a max-heap and the larger half is a min-heap.
+addNum pushes the new value and moves at most a few roots so the halves stay ordered.
+The two sizes differ by at most one, and each heap operation costs log of the number inserted so far.
+findMedian reads the max-heap root, or the average of both roots, in constant time.
+*/

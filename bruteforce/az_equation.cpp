@@ -49,3 +49,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(10^5)
+// Space Complexity: O(1)
+// Pattern: Brute Force - Digit products
+// explanation:
+/*
+main calls solve2. fghij runs up to 98765/n, and abcde is fghij * n.
+Each candidate inserts the ten digits of the two numbers into a set.
+A set of size 10 means the pair uses every digit once, and both numbers are printed.
+The unused solve walks permutations of the ten digit characters instead of this numeric range.
+The set never holds more than ten digits.
+*/

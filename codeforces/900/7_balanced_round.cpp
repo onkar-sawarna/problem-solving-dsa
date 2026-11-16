@@ -41,3 +41,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Sorted streak
+// explanation:
+/*
+The difficulties are sorted so only neighboring gaps matter.
+count grows while |a[i] - a[i - 1]| stays within k, and drops back to 1 when a gap is too wide.
+max_count keeps the longest surviving streak, including a single-element array.
+The number of problems to remove is n - max_count.
+*/

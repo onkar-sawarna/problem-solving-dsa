@@ -38,3 +38,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Brute Force - Presence check
+// explanation:
+/*
+Each read value is inserted into a set, which costs a logarithmic step per element.
+After the inserts, the set is asked whether k is present.
+A hit prints Yes.
+A miss prints No.
+*/

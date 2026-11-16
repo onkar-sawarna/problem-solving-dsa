@@ -36,3 +36,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Pair compare
+// explanation:
+/*
+Each index reads a score a[i] and a border b[i].
+The counter increases when the border is strictly above the score.
+Equal values are left uncounted.
+The loop visits every index once.
+The printed value is that counter.
+*/

@@ -28,3 +28,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Deque - LR placement
+// explanation:
+/*
+Each character of the length-n string is one index from 0 to n-1.
+R pushes that index onto the back of left, and L pushes it onto the front of right.
+The print is left, then n, then right, which is the final order of those positions.
+Every index is pushed once and printed once.
+The two deques together store n integers.
+*/

@@ -166,3 +166,14 @@ int main() {
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: BFS - Vertical order
+// explanation:
+/*
+The queue holds a node with its row and column, and the root starts at row 0, column 0.
+A left child is pushed one row down and one column left, and a right child one row down and one column right.
+Each value is inserted into the multiset stored at nodes_by_coordinates[col][row].
+Columns are then read from the outer map in increasing order, and each multiset is read in sorted order.
+*/

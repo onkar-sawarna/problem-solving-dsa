@@ -38,3 +38,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Math - Sum parity
+// explanation:
+/*
+sum adds every a[i] in one pass.
+An even total can be split into two groups whose sums have the same parity, so the answer is Yes.
+An odd total cannot, so the answer is No.
+The only test after the loop is sum % 2.
+*/

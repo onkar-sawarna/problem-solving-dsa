@@ -58,3 +58,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log 1e9)
+// Space Complexity: O(n)
+// Pattern: Binary search on answer - Eating speed
+// explanation:
+/*
+left and right bound the eating speed, and mid is tested by canEatAll.
+The check adds (piles[i] + speed - 1) / speed hours for each pile.
+If the running hour count passes h the speed is rejected immediately.
+A speed that finishes within h moves right to mid - 1, and a slower speed moves left to mid + 1.
+*/

@@ -43,3 +43,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * N log N)
+// Space Complexity: O(N)
+// Pattern: Greedy - Sort by left endpoint
+// explanation:
+/*
+Each item stores L, R, and the teleport value t.
+Sorting orders items by L, then by R, then by t.
+ans begins at k.
+An item applies only when ans already sits inside [L, R], and then ans becomes the larger of ans and t.
+Later items see the raised value, so a chain of covering segments can keep lifting it.
+*/

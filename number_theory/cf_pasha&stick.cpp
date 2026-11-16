@@ -24,3 +24,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Stick rectangle count
+// explanation:
+/*
+An odd n cannot be split into four positive integer lengths, so the answer is 0.
+For even n the code evaluates (n/2 - 1) / 2.
+That expression counts the splits directly, with no loop over side lengths.
+No array is allocated.
+*/

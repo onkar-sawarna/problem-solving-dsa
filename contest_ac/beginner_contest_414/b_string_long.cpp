@@ -54,3 +54,15 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)
+// Pattern: Constructive - Run expansion
+// explanation:
+/*
+Each of the n pieces supplies a character and a repeat count.
+Before appending, the code checks whether res would grow past 100 characters.
+Crossing that limit sets too_long and leaves the remaining pieces unread.
+Otherwise the character is appended one copy at a time, and the stored length never passes 100.
+The output is res, or the words Too Long.
+*/

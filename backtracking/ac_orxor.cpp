@@ -27,3 +27,14 @@ using namespace std;
         cout<<ans<<"\n";
         return 0;
     }
+
+// Time Complexity: O(2^n)
+// Space Complexity: O(n)
+// Pattern: Backtracking - Segment OR XOR
+// explanation:
+/*
+At each index the search either ORs a[level] into the open segment or closes that segment.
+Closing XORs the finished OR into the running total and starts a new OR at a[level].
+Two branches on every index make 2^n leaves, and each leaf keeps the smaller final XOR.
+Extra memory is the recursion depth n.
+*/

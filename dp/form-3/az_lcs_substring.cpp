@@ -56,3 +56,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 3 - two strings, state (i, j)
+// explanation:
+/*
+State dp[i][j] is the length of the common contiguous segment that starts at a[i] and b[j].
+When a[i] equals b[j] the transition is 1 plus the length from (i+1, j+1). Differing characters give length 0.
+The calls to (i+1, j) and (i, j+1) evaluate every later starting pair.
+max_lcsb_overall stores the largest of those lengths. An index past either string returns 0.
+The table has one cell per pair of positions and each cell does constant work.
+*/

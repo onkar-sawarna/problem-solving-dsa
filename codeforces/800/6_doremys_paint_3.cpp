@@ -53,3 +53,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Two frequencies
+// explanation:
+/*
+mp counts how often each value appears; each insert is logarithmic.
+A single distinct value prints Yes immediately.
+Three or more distinct values print No.
+Exactly two values print Yes only when their frequencies match or differ by one.
+*/

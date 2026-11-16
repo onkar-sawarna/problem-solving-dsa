@@ -48,3 +48,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N log N)
+// Space Complexity: O(N)
+// Pattern: Greedy - Pair non-dots
+// explanation:
+/*
+Dots are skipped. Every other character is a pick, using 1-based positions.
+The first pick of a pair stores its position, and the second pick inserts the pair and resets the counter.
+A set keeps the pairs, so identical endpoints collapse and the output comes out sorted.
+The number of pairs is at most n / 2.
+Each insert costs a logarithm, on top of the single scan of s.
+*/

@@ -69,3 +69,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][sum_left] is 1 when coins from index level onward can make sum_left, with each coin usable any number of times.
+The transition succeeds when skipping to level+1 succeeds, or when paying one x[level] and staying at level succeeds.
+A negative sum_left returns 0. At level n the result is 1 only for a remaining sum of 0.
+The table is indexed by the coin index and the remaining sum, and each cell tries those two branches.
+*/

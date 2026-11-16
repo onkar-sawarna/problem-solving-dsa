@@ -47,3 +47,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Two Pointers - End trim
+// explanation:
+/*
+i starts at the left end and j at the right end.
+They step inward only while the two ends are different bits.
+The first equal pair stops the walk.
+The length still inside the pointers is the answer, and crossed pointers mean the whole string was removed.
+*/

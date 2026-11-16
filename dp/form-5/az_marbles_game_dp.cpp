@@ -65,3 +65,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(x*y*(x+y))
+// Space Complexity: O(x*y)
+// Pattern: DP Form 5 - game, opponent plays optimally
+// explanation:
+/*
+State dp[x][y] is 1 when the player to move can force a win from piles of size x and y.
+A move leaves the first pile at any smaller size, leaves the second pile at any smaller size, or reduces both piles by the same positive amount.
+The transition writes 1 as soon as one of those moves reaches a cell whose value is 0.
+The cell (0, 0) returns 0 because every move loop is empty.
+Each pair of pile sizes is cached once, and filling that pair scans O(x+y) moves.
+*/

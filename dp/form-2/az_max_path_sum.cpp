@@ -65,3 +65,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[i][j] is the maximum path sum ending at cell (i, j) for paths that start at (0, 0) and move only down or right.
+The transition adds arr[i][j] to the better of the path that arrived from above and the path that arrived from the left.
+The cell (0, 0) is arr[0][0]. A step above the first row or left of the first column is ignored.
+The printed answer is the state of the bottom-right cell. Each of the n*m cells reads at most two neighbors.
+*/

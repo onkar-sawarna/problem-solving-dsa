@@ -52,3 +52,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n * k log k)
+// Space Complexity: O(n * k)
+// Pattern: Hash Map - Sorted Anagram Key
+// explanation:
+/*
+Each string is copied and sorted, and the sorted copy is the map key.
+Anagrams share that key and are appended to the same group.
+Sorting a string of length k costs k log k, done for all n strings.
+The keys and the grouped strings store every input character.
+*/

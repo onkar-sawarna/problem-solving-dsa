@@ -71,3 +71,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - All distinct values
+// explanation:
+/*
+all_distinct_elements_set counts the distinct values that the window must cover.
+head advances while distinct_elements_in_window is still short of that total, updating current_window_freq.
+When the counts match, min_len shrinks to head - tail + 1.
+tail decrements the frequency of a[tail] and steps forward, lowering the distinct tally when a count hits 0.
+*/

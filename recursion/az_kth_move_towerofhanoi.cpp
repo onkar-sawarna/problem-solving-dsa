@@ -21,3 +21,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Recursion - Kth Hanoi move
+// explanation:
+/*
+Disk n moves on step 2^(n-1). A smaller k stays in the first sub-tower, and a larger k subtracts that step.
+Each call drops one disk and follows only the half that still contains k.
+The walk stops when k is the single move of the current disk.
+The stack holds one frame per disk, with a few integers in each frame.
+*/

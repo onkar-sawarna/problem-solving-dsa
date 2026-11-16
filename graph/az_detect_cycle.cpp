@@ -66,3 +66,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: DFS - Directed cycle
+// explanation:
+/*
+col begins at 1 for every node.
+dfs paints the node 2, then a neighbor still at 1 is entered recursively.
+A neighbor that is already 2 means the walk has returned to the current stack, so a cycle is reported.
+The node is painted 3 after its adjacency list, and the outer loop starts a walk only at nodes still colored 1.
+*/

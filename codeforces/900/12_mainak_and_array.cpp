@@ -48,3 +48,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Rotation gaps
+// explanation:
+/*
+The answer starts as the gap between the last element and the first.
+One pass raises it to the best v[i] - v[0], and another raises it to the best v[n - 1] - v[i].
+A third pass checks each adjacent drop v[i] - v[i + 1], the gain from rotating at that cut.
+The printed value is the largest of those candidates.
+*/

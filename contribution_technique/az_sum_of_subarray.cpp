@@ -18,3 +18,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Contribution - Element Span
+// explanation:
+/*
+arr[i] sits in every subarray whose start is in 0..i and whose end is in i..n-1.
+The start has i+1 choices and the end has n-i choices, so the element is counted (i+1)*(n-i) times.
+Adding arr[i] times that product, for every i, totals the sum of all subarray sums.
+The loop allocates nothing beyond the input array.
+*/

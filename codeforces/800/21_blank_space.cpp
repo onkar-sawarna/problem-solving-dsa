@@ -41,3 +41,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Zero streak
+// explanation:
+/*
+len grows on each 0 and records a blank run.
+A nonzero cell stores len into max_len when it is longer, then clears len.
+After the loop, max_len is updated once more so a run that ends at the last index is kept.
+The printed value is that longest run.
+*/

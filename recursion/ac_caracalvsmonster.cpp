@@ -48,3 +48,14 @@ signed main() {
     cin >> h;
     cout << monster_attack(h) << endl;
 }
+
+// Time Complexity: O(log h)
+// Space Complexity: O(log h)
+// Pattern: Recursion - Halving
+// explanation:
+/*
+Each call replaces h with h/2 and does only a constant amount of work around that call.
+The base case is h == 1, so the depth is how many times h can be halved.
+The returned value is 1 + 2 * f(h/2): one hit, then both spawned monsters.
+One stack frame is kept per halving.
+*/

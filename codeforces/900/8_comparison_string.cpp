@@ -43,3 +43,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Longest run
+// explanation:
+/*
+lessthan and greaterthan track the current streak of '<' and '>' .
+A '<' grows the less-than streak, clears the other counter, and updates maxi.
+A '>' does the same for the greater-than streak.
+The answer is maxi + 1, one past the longest uninterrupted run.
+*/

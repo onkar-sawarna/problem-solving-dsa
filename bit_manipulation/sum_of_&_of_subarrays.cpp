@@ -53,3 +53,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(30 * n)
+// Space Complexity: O(1)
+// Pattern: Bit Contribution - Subarray AND Sum
+// explanation:
+/*
+The outer loop walks 30 bit positions and scans the array once per bit.
+That bit survives a subarray AND only inside a contiguous run where it stays set.
+A run of length L is charged L*(L+1)/2 subarrays, and that count is multiplied by the bit weight.
+The bound is the 30 by n loops. Extra memory is a few counters.
+*/

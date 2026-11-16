@@ -40,3 +40,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Adjacent descent
+// explanation:
+/*
+Each neighbor pair is checked from left to right.
+A pair that already decreases sets operations to 0, because the array is already unsorted.
+A non-decreasing pair needs diff / 2 + 1 increments to create a descent there.
+operations keeps the smallest of those costs.
+*/

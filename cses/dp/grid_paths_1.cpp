@@ -55,3 +55,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n^2)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[i][j] is the number of paths from cell (i, j) to the opposite corner of the n by n grid.
+A move goes one step down or one step right. A cell outside the grid, or a cell that holds '*', returns 0.
+The corner (n-1, n-1) returns 1 when it is free.
+The transition adds the downward path and the rightward path, modulo 1e9+7.
+The table stores one value per cell, and each cell makes those two moves.
+*/

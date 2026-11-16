@@ -90,3 +90,14 @@ signed main(){
         solve();
     }
 }
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n * m)
+// Pattern: 0-1 BFS - Minimum walls
+// explanation:
+/*
+S is pushed at the front of the deque with distance 0.
+From the front cell, each of the four neighbors is considered.
+A move onto an open cell costs 0 and is pushed to the front, while a move onto # costs 1 and is pushed to the back.
+vis skips a cell once it has been popped, and the value printed is dist at E.
+*/

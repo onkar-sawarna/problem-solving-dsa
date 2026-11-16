@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Sum bounds
+// explanation:
+/*
+x_min is the sum of the first k positives, k * (k + 1) / 2.
+x_max is the sum of the largest k values in 1..n, computed as the full sum minus the sum of the smallest n - k values.
+x is accepted only when it lies between those two inclusive bounds.
+The test is arithmetic on n, k, and x.
+*/

@@ -72,3 +72,14 @@ int main()
 
     return 0;
 }
+
+// Time Complexity: O(n^k)
+// Space Complexity: O(n)
+// Pattern: Backtracking - K Queens
+// explanation:
+/*
+Rows are considered from top to bottom, and a row may be left empty.
+While queens remain, every column is tested.
+check rejects a column or a diagonal already used by an earlier queen, and at most k queens are placed.
+That is the k-queens bound. The queens vector holds one entry per row.
+*/

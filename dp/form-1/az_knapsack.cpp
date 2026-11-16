@@ -89,3 +89,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*W)
+// Space Complexity: O(n*W)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][weight_taken] is the best value from items at index level and later, with weight_taken already used.
+The transition skips item level, or takes it when weight_taken plus w[level] still fits in W and then adds v[level].
+Level n returns 0 because the item list is finished.
+The table has one row per item and one column per weight up to W, and each cell tries those two branches.
+generate walks the rows and prints an item when the take branch is the one that produced the stored value.
+*/

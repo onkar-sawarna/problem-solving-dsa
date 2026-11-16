@@ -80,3 +80,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - At most K distinct
+// explanation:
+/*
+head advances while adding arr[head + 1] would leave at most k distinct values in mp.
+distinctCnt increases only when a value is inserted for the first time.
+ans adds head - tail + 1, the subarrays that start at tail and end anywhere up to head.
+tail decrements mp[arr[tail]] and steps forward, and a count that hits 0 lowers distinctCnt.
+*/

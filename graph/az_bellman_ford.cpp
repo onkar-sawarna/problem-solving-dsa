@@ -66,3 +66,14 @@ signed main() {
     solve();
     return 0;
 }
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n + m)
+// Pattern: Bellman-Ford - Negative cycle
+// explanation:
+/*
+edges holds every input edge, and dist[1] starts at 0.
+n rounds each scan all m edges and relax dist[v] when dist[u] plus the weight is smaller.
+A relaxation on the nth round sets that dist entry to -INF.
+A second sweep copies -INF forward along edges, and dist[n] is printed, or -1 if it became -INF.
+*/

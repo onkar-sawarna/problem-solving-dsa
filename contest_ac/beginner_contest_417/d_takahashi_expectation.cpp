@@ -63,3 +63,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(K * N + Q)
+// Space Complexity: O(N + K)
+// Pattern: Brute Force - Bounded mood simulation
+// explanation:
+/*
+K is fixed at 2000. final_mood[x] is the mood after all n presents when the start value is x.
+A present adds a while the mood is <= p, and otherwise subtracts b with a floor at 0.
+Each start from 0 through K is simulated independently, so the table costs K passes over the presents.
+A query with x <= K prints the stored mood.
+A query above K prints x plus final_mood[K] - K, reusing the net shift measured at the top of the table.
+*/

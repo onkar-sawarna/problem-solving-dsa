@@ -55,3 +55,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[l][s] records whether sum s can be made from coins x[l] onward, using unlimited copies.
+The loops move l from n down to 0 and, for every sum s, apply a skip-or-take update.
+The cell is set when dp[l+1][s] is already true, or when s is at least x[l] and dp[l][s-x[l]] is true.
+The branch for l equal to n writes 1 only at sum 0 before that update runs.
+Every pair (l, s) is visited once, so the work matches the size of the (n+1) by (m+1) table.
+*/

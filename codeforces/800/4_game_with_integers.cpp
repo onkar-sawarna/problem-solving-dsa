@@ -31,3 +31,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Multiple of three
+// explanation:
+/*
+Each turn adds or subtracts 1, and the winner is whoever first makes the number divisible by 3.
+When n % 3 is already 0, the second player can always answer and keep that property, so the answer is Second.
+Otherwise the first player can step onto a multiple of 3 immediately.
+The branch is that single remainder.
+*/

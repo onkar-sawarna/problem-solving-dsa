@@ -55,3 +55,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][match] counts binary strings on the remaining positions that have already matched match characters of the subsequence 0100.
+A match of 4 returns 0 because that subsequence is complete.
+The transition adds rec(level+1, match+1) and rec(level+1, match).
+Reaching level n while match is still below 4 counts as one finished string.
+Match runs only from 0 through 4, so the table is linear in n and each state does constant work.
+*/

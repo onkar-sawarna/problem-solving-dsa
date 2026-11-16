@@ -49,3 +49,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// Pattern: Degree count - Tree coloring
+// explanation:
+/*
+A single node returns 1 immediately.
+Each of the N-1 edges increments degree at both endpoints.
+One pass from 1 to N keeps the largest degree.
+The printed number of colors is that maximum degree plus one.
+*/

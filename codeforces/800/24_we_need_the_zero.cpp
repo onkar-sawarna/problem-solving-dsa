@@ -35,3 +35,14 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Math - Total xor
+// explanation:
+/*
+running_xor folds every a[i] with xor.
+An odd length can use that xor as the added value, so it is printed directly.
+An even length works when the fold is already 0, which prints 0.
+A nonzero fold on an even length prints -1.
+*/

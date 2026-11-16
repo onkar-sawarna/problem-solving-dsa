@@ -45,3 +45,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O((N + M) log N)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Multiset delete
+// explanation:
+/*
+The n numbers are inserted into a multiset, so equal values stay as separate copies.
+Each of the m queries searches for one value.
+A hit erases exactly one copy through erase of the found iterator. A miss leaves the multiset as it is.
+The remaining values are printed in sorted order.
+Insert, find, and erase each follow the tree.
+*/

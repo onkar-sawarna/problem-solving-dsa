@@ -45,3 +45,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Memoization - Climbing Stairs
+// explanation:
+/*
+Ways to reach a step are the ways to reach the previous step plus the step before that.
+rec writes the answer into dp, so each of the n steps is solved once.
+The first call follows a chain of length n before the other branch hits the cache.
+The table has 50 slots and the call stack grows with n.
+*/

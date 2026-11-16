@@ -46,3 +46,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * N log N)
+// Space Complexity: O(N)
+// Pattern: Greedy - Sorted gap check
+// explanation:
+/*
+init is a[k - 1].
+The set keeps every a[i] that is at least init, in increasing order, with duplicates collapsed.
+The walk starts at init and steps through that set.
+A step fails when the new value minus the previous one is greater than init.
+If every consecutive gap fits, the answer is Yes.
+*/

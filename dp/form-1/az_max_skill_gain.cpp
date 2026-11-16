@@ -78,3 +78,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*x*k)
+// Space Complexity: O(n*x*k)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][time_taken][item_taken] is the best skill from problems at index level and later, after that much time and that many problems are already used.
+The transition skips problem level, or solves it when t[level] still fits in the time limit x and the problem count still fits in k, adding s[level].
+Level n returns 0 because the problem list is finished.
+Each problem, each time total, and each problem count has one cell, and each cell tries those two branches.
+*/

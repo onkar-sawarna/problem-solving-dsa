@@ -46,3 +46,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Constructive - Largest first
+// explanation:
+/*
+The array is sorted so the smallest value sits at the front and the largest at the back.
+Equal min and max means every element is identical, and the answer is NO.
+Otherwise the largest value is printed first, followed by a[0] through a[n - 2].
+That order is the whole construction.
+*/

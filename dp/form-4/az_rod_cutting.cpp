@@ -55,3 +55,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n^3)
+// Space Complexity: O(n^2)
+// Pattern: DP Form 4 - interval (l, r)
+// explanation:
+/*
+State dp[l][r] is the minimum cost of cutting the segment whose endpoints are x[l] and x[r].
+Adjacent endpoints, where l+1 equals r, need no further cut and cost 0.
+The transition tries every interior index p, adds the segment length x[r]-x[l], and adds the costs of intervals [l, p] and [p, r].
+Every pair of endpoints is one state, and each state tries O(n) places to put the next cut.
+*/

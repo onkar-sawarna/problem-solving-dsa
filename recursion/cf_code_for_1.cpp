@@ -38,3 +38,15 @@ using namespace std;
         cout<<solve(n,l,r)<<"\n";
         return 0;
     }
+
+// Time Complexity: O(n)
+// Space Complexity: O(log n)
+// Pattern: Recursion - Constructed binary string
+// explanation:
+/*
+The string for n is the string for n/2, then the bit n%2, then the string for n/2 again.
+A query that misses the middle makes one recursive call on n/2.
+A query that covers the middle adds n%2 and then searches both halves.
+Covering the whole string visits Theta(n) calls, and the length() work over that tree is also O(n).
+The two half-calls run one after the other, so the stack stays O(log n) deep.
+*/

@@ -61,3 +61,15 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(n_rows*m_cols)
+// Space Complexity: O(n_rows*m_cols)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[r][c] is the side length of the largest square of ones whose bottom-right corner is cell (r, c).
+A zero cell returns side 0, as does a step above row 0 or left of column 0.
+On a one, the transition is 1 plus the minimum side among the cell above, the cell to the left, and the diagonal cell.
+max_side_length_overall keeps the biggest side, and the program prints that side squared.
+Every grid cell is one state and reads three neighbors.
+*/

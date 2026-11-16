@@ -40,3 +40,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Odd frequencies
+// explanation:
+/*
+freq counts the 26 letters in one pass over s.
+A second pass counts how many letters have an odd frequency.
+A palindrome can keep one odd count, and each removal can fix one more.
+When odd_count is greater than k + 1 the answer is no.
+*/

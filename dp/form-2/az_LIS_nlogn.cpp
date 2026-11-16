@@ -55,3 +55,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: DP Form 2 - LIS binary search on tails
+// explanation:
+/*
+lis stores the smallest tail of an increasing subsequence for every length built so far.
+When the tail list is empty or arr[i] is larger than the last tail, arr[i] is appended. When arr[i] is at most the last tail, lower_bound overwrites the first tail that is greater than or equal to arr[i].
+insertedAt[i] records the length slot used by arr[i].
+A backward scan takes one value for each slot from the longest slot down to slot 0, then reverses that list and prints it with its length.
+Each of the n values does one binary search, and lis together with insertedAt uses linear extra memory.
+*/

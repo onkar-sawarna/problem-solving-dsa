@@ -69,3 +69,15 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[i][j] is the number of ways to reach cell (i, j) from the top-left, moving only right or down.
+An open start cell is 1. A cell whose grid value is 1 stores 0.
+An open interior cell adds the ways stored in the left neighbor and the upper neighbor.
+The first row copies only from the left, and the first column copies only from above.
+One cell is filled per grid position, each in constant time, and sums are taken modulo 1e9+7.
+*/

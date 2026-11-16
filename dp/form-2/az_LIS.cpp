@@ -68,3 +68,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[level] is the longest strictly increasing subsequence that ends at index level.
+The transition checks every earlier index and, when arr[prev] is smaller than arr[level], takes 1 plus that earlier length.
+Before any extension the length is 1, and an index below 0 returns 0.
+The printed value is the maximum of dp[i] over every index.
+There are n ending positions, each scans O(n) earlier indexes, and the table stores one length per index.
+*/

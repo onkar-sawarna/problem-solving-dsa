@@ -19,3 +19,14 @@ int main() {
     }
     return 0;
 }
+
+// Time Complexity: O(t)
+// Space Complexity: O(1)
+// Pattern: Number Theory - Inclusion exclusion
+// explanation:
+/*
+Each test wants the sum of multiples of 3 or 5 that are strictly below n.
+sumDivisibleBy(n, a) evaluates a * p * (p+1) / 2 with p = (n-1)/a.
+Multiples of 15 are subtracted so they are not added for both 3 and 5.
+Each test is a constant amount of arithmetic, and no multiple list is built.
+*/

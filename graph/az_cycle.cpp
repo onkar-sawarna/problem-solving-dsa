@@ -69,3 +69,14 @@ signed main()
     solve();
     return 0;
 }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: DFS - Cycle reconstruction
+// explanation:
+/*
+dfs paints the node 2 and stores parent before scanning neighbors.
+A neighbor colored 1 is entered recursively, and a neighbor colored 2 is a back edge.
+From the current node the parent links are copied into any_cycle until that neighbor is reached, then the list is reversed.
+Only the first such back edge fills any_cycle, and the node is painted 3 when its list is finished.
+*/

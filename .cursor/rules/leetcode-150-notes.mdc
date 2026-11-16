@@ -1,0 +1,30 @@
+---
+description: Time, space, pattern, and explanation note on every solution in the repo
+globs: "**/*.cpp"
+alwaysApply: false
+---
+
+# Solution note
+
+Start every question `.cpp` with one line that states the task, not the algorithm. Skip `templates/main.cpp`. Skip a file that already starts with the question.
+
+```cpp
+// Question: Merge sorted nums2 into sorted nums1 in place.
+```
+
+After the code, add this note. Skip a file that already contains `Time Complexity:`. Fill the note from the code in that file.
+
+```cpp
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Two Pointers - From End to Start
+// explanation:
+/*
+one short paragraph of the actual moves in this file.
+name the leftover case or the state, when there is one.
+*/
+```
+
+- Time and space use the variables from that problem. A sort is `O(n log n)`. A DP table states both dimensions.
+- Pattern names the branch and the variant.
+- The explanation describes this file. Do not repeat a sentence, and do not change the code above the note.

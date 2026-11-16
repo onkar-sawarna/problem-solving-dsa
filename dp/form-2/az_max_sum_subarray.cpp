@@ -44,3 +44,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[i] is the largest subarray sum that ends at index i.
+The transition chooses the larger of extending dp[i-1] by arr[i] and starting fresh at arr[i].
+The answer is the maximum value written into dp.
+The loop fills one cell per index from the previous cell only, so the table length is n.
+*/

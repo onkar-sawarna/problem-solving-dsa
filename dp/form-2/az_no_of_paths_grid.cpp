@@ -54,3 +54,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[i][j] is the number of ways to reach the bottom-right starting from cell (i, j), moving only down or right.
+A coordinate outside the grid, or a cell whose value is 1, returns 0.
+The open cell (n-1, m-1) returns 1.
+The transition adds the ways from the cell below and the ways from the cell to the right, modulo 1e9+7.
+One state is stored per grid cell, and each state makes those two moves.
+*/

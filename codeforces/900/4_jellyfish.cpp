@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Timer cap
+// explanation:
+/*
+sum starts at the initial timer b.
+Each tool v adds min(v, a - 1), so a tool larger than a full cycle cannot push the timer through a reset.
+The loop folds every tool into that running sum.
+The printed total is b plus those capped additions.
+*/

@@ -42,3 +42,14 @@ signed main() {
     while (t--) solve();
     return 0;
 }
+
+// Time Complexity: O(N log N)
+// Space Complexity: O(N)
+// Pattern: Sliding window - Prefix multiset
+// explanation:
+/*
+prefix[i + 1] is the sum of A up to i, and ms holds prefixes of the open window, starting with 0.
+right walks from 0 to N - 1, and each odd A[right] increases odd.
+While odd is greater than K, the prefix at left is erased from ms and left steps forward.
+lower_bound on ms finds the smallest kept prefix that is at least prefix[right + 1] - D, and the best difference is kept.
+*/

@@ -36,3 +36,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n + k) expected
+// Space Complexity: O(k)
+// Pattern: Counting - Allowed character runs
+// explanation:
+/*
+The k working keys go into an unordered set.
+One pass over the string grows a run while the current character is in that set.
+When a broken character appears, a run of length L adds L*(L+1)/2 substrings and the run resets.
+The same formula is applied to the run that reaches the end of the string.
+The set holds the allowed characters, and the scan keeps only a few counters.
+*/

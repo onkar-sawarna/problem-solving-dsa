@@ -55,3 +55,14 @@ signed main(){
         solve();
     }
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - MEX
+// explanation:
+/*
+np is filled with 0 through n, the values that are initially missing.
+The loop inserts arr[i] into freq, and a count that becomes 1 erases that value from np.
+Once the index reaches m, arr[i - m] is erased, and a count that falls to 0 is put back into np.
+After each full window of length m, getmex reads the begin of np and minmex keeps the smallest of those.
+*/

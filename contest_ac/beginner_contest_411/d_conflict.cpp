@@ -73,3 +73,15 @@ signed main() {
     
     return 0;
 }
+
+// Time Complexity: O(Q + S)
+// Space Complexity: O(Q + S)
+// Pattern: Constructive - Append versions
+// explanation:
+/*
+Type 2 pushes a node whose parent is the PC's current version and whose text is the appended piece, then points that PC at the new node.
+Type 1 copies the server version id onto a PC. Type 3 copies a PC version id onto the server.
+Those copies move integers only, so the character data stays on the nodes.
+After the queries, the server id is followed through parent links, the pieces are reversed into write order, and they are joined.
+S is the total length of every appended piece, including the joined result.
+*/

@@ -41,3 +41,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N log N)
+// Space Complexity: O(N)
+// Pattern: Math - Pair frequency
+// explanation:
+/*
+The pair test j - i = a[i] + a[j] is rewritten as j - a[j] = i + a[i] for a later j.
+The map counts how many earlier indices stored the key a[i] + i.
+At the current index the lookup key is i - a[i], and that frequency is added to ans before the current key is inserted.
+Inserting after the lookup counts each pair once, with the right index later in the scan.
+Every map operation costs a logarithm in the number of distinct keys.
+*/

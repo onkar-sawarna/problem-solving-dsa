@@ -61,3 +61,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(a*b*(a+b))
+// Space Complexity: O(a*b)
+// Pattern: DP Form 5 - game, opponent plays optimally
+// explanation:
+/*
+State dp[x][y] is 1 when the player to move can force a win from pile sizes x and y.
+The loops increase x and then y, so every smaller pile a move can reach is already stored.
+A cell becomes 1 when some smaller first pile, some smaller second pile, or an equal cut of both piles, is stored as 0.
+At (0, 0) those three loops are empty, so the cell stays 0.
+Each cell (x, y) scans O(x+y) earlier cells, and the table covers every pair up to (a, b).
+*/

@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Closest to zero
+// explanation:
+/*
+minimum starts large and is replaced by abs(arr[i]) whenever a closer value appears.
+The loop covers the whole array, so the stored minimum is the smallest absolute value.
+That distance is the number of steps needed to bring one element to zero.
+The driver runs this solve once.
+*/

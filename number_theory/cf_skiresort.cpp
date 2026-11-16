@@ -40,3 +40,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(t * n)
+// Space Complexity: O(n)
+// Pattern: Counting - Temperature runs
+// explanation:
+/*
+Each test scans its array once and grows a streak while arr[i] is at most q.
+When the streak breaks, a length L of at least k adds (L-k+1)*(L-k+2)/2 segments.
+The same formula runs again if the array ends inside a valid streak.
+Over t tests the work is linear in the total length of the arrays.
+Each test stores its own n temperatures.
+*/

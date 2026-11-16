@@ -109,3 +109,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 2 - best that ends here (Kadane, LIS, grid cell)
+// explanation:
+/*
+State dp[level] is the largest subarray sum that ends at index level.
+The transition is arr[level] plus the previous ending sum when that sum is positive, and arr[level] alone when the previous sum is at most 0.
+The answer is the largest ending sum.
+The opening loop keeps that previous ending sum in one variable, so that version uses a constant amount of extra memory.
+The memoized table stores one value per index, and both versions spend constant work at each of the n indexes.
+*/

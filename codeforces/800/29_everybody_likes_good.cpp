@@ -37,3 +37,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Adjacent parity
+// explanation:
+/*
+The loop compares each element with the next one.
+Matching least bits mean the two neighbors have the same parity.
+Every such pair increments operations.
+The printed count is how many adjacent pairs must be broken.
+*/

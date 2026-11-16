@@ -44,3 +44,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Counting - First Unique Character
+// explanation:
+/*
+A table of 256 counters records how often each character appears.
+A second pass returns the smallest index whose counter is 1.
+If every character is repeated, the function returns -1.
+The table length is fixed, so extra memory does not grow with the string.
+*/

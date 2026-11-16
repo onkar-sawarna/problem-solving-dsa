@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Coin parity
+// explanation:
+/*
+n must be formed from coins of 2 and coins of k.
+An odd n cannot be built when k is even, and that pair prints No.
+Every other combination of parities prints Yes.
+The decision is the one modulo test on n and k.
+*/

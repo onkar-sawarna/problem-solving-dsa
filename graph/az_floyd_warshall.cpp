@@ -60,3 +60,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n^3)
+// Space Complexity: O(n^2)
+// Pattern: Floyd-Warshall - All pairs
+// explanation:
+/*
+dp is an (n+1) by (n+1) matrix, with 0 on the diagonal and INF elsewhere.
+Each undirected edge stores its cost in both directions, keeping the smaller cost when that pair already has an edge.
+For every intermediate k, every pair i, j is relaxed through k when both hops are below INF.
+Each of the q queries prints dp[a][b], or -1 when that cell is still INF.
+*/

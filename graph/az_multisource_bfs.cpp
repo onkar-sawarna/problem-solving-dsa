@@ -123,3 +123,14 @@ signed main(){
         solve();
     }
 }
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n * m)
+// Pattern: Multisource BFS - Grid distances
+// explanation:
+/*
+Every E cell is pushed with distance 0, itself as origin, and num_path 1.
+The queue expands in the four directions dx and dy, and cells outside the grid or on # are skipped.
+A neighbor with a strictly larger dist is updated, parent and origin are copied, and the cell is pushed.
+An equal distance only adds into num_path, and the closest S cells are those whose dist equals the minimum.
+*/

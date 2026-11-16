@@ -21,3 +21,14 @@ signed main(){
     cout<<ans<<"\n";
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Contribution - Ending Subarray Sum
+// explanation:
+/*
+prev_sum carries the sum of the subarray sums that end at the previous index.
+Those sums remain, and arr[i] is added once for each of the i+1 subarrays that now end at i.
+ans adds the updated prev_sum, so every ending position is included exactly once.
+One pass keeps two running integers besides the input array.
+*/

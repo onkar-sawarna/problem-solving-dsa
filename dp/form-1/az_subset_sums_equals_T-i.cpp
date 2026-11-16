@@ -67,3 +67,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*t)
+// Space Complexity: O(n*t)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][taken] is 1 when the items from level onward can raise the current sum taken to exactly the target t.
+The transition succeeds by leaving taken unchanged or by adding x[level] to it.
+A taken value above t returns 0. Once level passes n, the state is 1 only when taken equals t.
+The table has one row per item and one column per sum up to t, and each cell tries those two branches.
+*/

@@ -56,3 +56,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(n*m)
+// Pattern: DP Form 3 - two strings, state (i, j)
+// explanation:
+/*
+State dp[i][j] is the longest common subsequence of the suffixes a[i..] and b[j..].
+The transition keeps the better of skipping a[i] and skipping b[j].
+When a[i] equals b[j] it also considers 1 plus the state of the two following suffixes.
+An index past either string returns 0.
+The table has one cell for each pair of positions, and each cell tries a constant number of moves.
+*/

@@ -35,3 +35,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(t)
+// Space Complexity: O(1)
+// Pattern: Brute Force - Letter pair list
+// explanation:
+/*
+generate_berland_strings fills a fixed table of the 26*25 two-letter words whose letters differ.
+Each of the t tests walks that table from index 1 until the input word matches.
+The table size does not depend on t, so a query is a short scan of a constant list.
+The word array is allocated once and reused for every test.
+*/

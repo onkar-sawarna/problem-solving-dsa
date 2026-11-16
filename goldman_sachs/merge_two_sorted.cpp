@@ -50,3 +50,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(m + n)
+// Space Complexity: O(1)
+// Pattern: Two Pointers - Backward Merge
+// explanation:
+/*
+nums1 already has room for both arrays, so the merge writes from the last index backward.
+The larger of the two remaining tails is placed, and that pointer moves left.
+A leftover tail of nums2 is copied into the front, while a leftover tail of nums1 is already home.
+The only extra state is the three indexes.
+*/

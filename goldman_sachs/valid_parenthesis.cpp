@@ -50,3 +50,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Stack - Bracket Matching
+// explanation:
+/*
+Opening brackets are pushed as positive codes and closers are their negatives.
+A closer is accepted only when the stack top is the matching opener, and that opener is then popped.
+The string is valid when every closer matches and nothing remains on the stack.
+The stack stores at most one code per character.
+*/

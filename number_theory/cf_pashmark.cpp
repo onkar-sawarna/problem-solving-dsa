@@ -48,3 +48,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Sorting - Extreme pair product
+// explanation:
+/*
+The array is sorted, so the minimum is at the front and the maximum is at the back.
+If every value is equal, the difference is 0 and n*(n-1)/2 counts every unordered pair.
+Otherwise a forward scan counts copies of the minimum and a backward scan counts copies of the maximum.
+The answer is that difference and the product of the two counts.
+The n input values are the stored data.
+*/

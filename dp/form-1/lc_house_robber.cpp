@@ -77,3 +77,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level] is the most money that can be taken from houses level through n-1.
+Robbing house level adds nums[level] and continues at level+2, because the next house must stay untouched.
+Skipping house level continues at level+1.
+A level at or beyond n returns 0.
+The table has one cell per house and each cell compares those two choices.
+*/

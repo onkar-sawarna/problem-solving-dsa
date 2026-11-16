@@ -46,3 +46,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(t * n * 2^(n/2))
+// Space Complexity: O(2^(n/2))
+// Pattern: Meet in the Middle - Subset sums
+// explanation:
+/*
+Each test splits the array by index parity into two halves of about n/2 values.
+generate walks every mask of a half, adds the chosen elements, and sorts those sums.
+For each sum v from the first half, upper_bound counts sums from the second half that are at most x - v.
+Building the masks dominates and is proportional to n * 2^(n/2) per test.
+The two sorted sum lists are the extra memory.
+*/

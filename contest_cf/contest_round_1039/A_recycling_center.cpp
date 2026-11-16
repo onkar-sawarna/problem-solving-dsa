@@ -50,3 +50,15 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(T * N^2 log N)
+// Space Complexity: O(N)
+// Pattern: Greedy - Largest feasible
+// explanation:
+/*
+Weights live in a multiset.
+Each round erases the largest value that is still <= c. If every value is above c, the smallest value is erased and counted.
+The survivors are then doubled into a fresh multiset.
+That rebuild walks everything still present, and the outer loop runs once per weight.
+The answer is how many rounds had nothing that fit under c.
+*/

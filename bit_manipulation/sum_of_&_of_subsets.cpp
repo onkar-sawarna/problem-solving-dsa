@@ -42,3 +42,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(32 * n)
+// Space Complexity: O(1)
+// Pattern: Bit Contribution - Subset AND Sum
+// explanation:
+/*
+The outer loop walks 32 bit positions.
+The inner loop counts how many array values have that bit set.
+The bit stays set in a subset AND for every non-empty subset of those values, and there are 2^count - 1 of them.
+Each such subset adds the bit weight. Extra memory is a few counters beside the input array.
+*/

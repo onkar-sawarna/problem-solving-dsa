@@ -38,3 +38,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Range scan
+// explanation:
+/*
+l and r are shifted to 0-based indices.
+The loop reads s from l through r inclusive.
+The first character that is not o prints No and returns immediately.
+If every character in that segment is o, the answer is Yes.
+The worst case still walks the segment once.
+*/

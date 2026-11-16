@@ -83,3 +83,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O((n + m) log n)
+// Space Complexity: O(n + m)
+// Pattern: Dijkstra - Binary heap
+// explanation:
+/*
+The priority_queue orders pairs by smaller distance, and the source is pushed at distance 0.
+A popped node is skipped when visited already marks its distance final.
+Otherwise its outgoing edges in graph_adj may lower a neighbor's dist and push that new pair.
+visited stops a node from being expanded again after the first time it is popped.
+*/

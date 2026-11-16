@@ -36,3 +36,14 @@ using namespace std;
         cout<<ans<<"\n";
         return 0;
     }
+
+// Time Complexity: O(4^n)
+// Space Complexity: O(n)
+// Pattern: Backtracking - Three Bamboo Groups
+// explanation:
+/*
+Each bamboo is skipped or assigned to A, B, or C, so every index has four branches.
+Adding a bamboo to a group that already holds one costs 10.
+A leaf is ignored if any group is empty, otherwise the absolute gaps from a, b, and c are added.
+The call stack is n frames and no board is stored.
+*/

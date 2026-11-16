@@ -62,3 +62,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(Q)
+// Space Complexity: O(Q)
+// Pattern: Constructive - Run-length deque
+// explanation:
+/*
+The deque stores runs as pairs of value and copy count.
+Type 1 appends one run at the back.
+Type 2 subtracts k from the front: a run that is fully covered is popped, and a run that is only partly covered keeps the leftover count.
+The sum adds value times the number of copies taken.
+Each run is created once and popped at most once over the whole query list, so the front loop stays linear in Q.
+*/

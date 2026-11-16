@@ -59,3 +59,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(x log x)
+// Space Complexity: O(x)
+// Pattern: DP Form 5 - game, opponent plays optimally
+// explanation:
+/*
+State dp[x] is 1 when the player to move can force a win with x stones left.
+A move subtracts one power of two, such as 1, 2, 4, or 8, that is at most x.
+The transition writes 1 as soon as a move leaves a pile whose state is 0.
+A pile of 0 returns 0 because the player has no legal subtraction.
+The table holds one cell per pile size, and each cell tries O(log x) powers of two.
+*/

@@ -48,3 +48,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Fuel gap
+// explanation:
+/*
+The position list is built as 0, then the stations, then x.
+The scan takes each forward gap a[i] - a[i - 1].
+The last gap, from the final station back through x, is doubled because the trip must return.
+ans keeps the largest of those requirements.
+*/

@@ -59,3 +59,15 @@ signed main()
     }
     
 }
+
+// Time Complexity: O((n + q) log n)
+// Space Complexity: O(n)
+// Pattern: Multiset - School maxima
+// explanation:
+/*
+Each school has a multiset of its children's ratings, and highest_ratings keeps one maximum per non-empty school.
+reg and dereg drop the old school maximum, edit that school's multiset, then insert the new maximum.
+A move is one dereg plus one reg, and get_evenness reads the smallest school maximum.
+erase(rating[kid]) removes every equal rating in that school, so a tied rating costs more than a single node.
+The multisets hold the n ratings.
+*/

@@ -32,3 +32,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// Pattern: Constructive - Slice
+// explanation:
+/*
+The full string is read.
+substr(a, n - a - b) drops the first a characters and the last b characters.
+The kept middle is copied into s1.
+That copy is printed.
+Reading s and copying the slice are both linear in the string length.
+*/

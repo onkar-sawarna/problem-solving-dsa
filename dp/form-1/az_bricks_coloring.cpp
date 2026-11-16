@@ -92,3 +92,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N*K)
+// Space Complexity: O(N*K)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[i][j] is the number of ways to color i bricks so that exactly j adjacent pairs have different colors.
+The same color as brick i-1 keeps j and reuses the ways from (i-1, j).
+A different color has M_colors-1 choices and comes from the ways for (i-1, j-1).
+A single brick returns M_colors when j is 0. A negative j returns 0, and a j that is at least i returns 0 when i is positive.
+The filled cells are the pairs of brick count and change count, each with this constant transition, modulo 1e9+7.
+*/

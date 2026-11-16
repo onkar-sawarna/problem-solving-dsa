@@ -41,3 +41,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Constructive - XOR ranges
+// explanation:
+/*
+The array is read, then only the parity of n chooses the ranges.
+An even n is cleared by two XOR passes over [1, n].
+An odd n uses two passes on [2, n] and two passes on [1, 2].
+The stored values are never inspected; the printed pairs are constant for that parity.
+*/

@@ -25,3 +25,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(2^n)
+// Space Complexity: O(n)
+// Pattern: Recursion - Tower of Hanoi
+// explanation:
+/*
+Moving n disks recurses the n-1 tower onto the spare peg, prints the move of disk n, then recurses onto the target.
+The move count printed first is 2^n - 1, and each call prints at most one line.
+The recursion tree therefore has Theta(2^n) calls.
+Only one path from the root is on the stack, which is n frames.
+*/

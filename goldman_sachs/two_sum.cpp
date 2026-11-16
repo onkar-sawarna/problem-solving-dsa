@@ -43,3 +43,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Hash Map - Complement Lookup
+// explanation:
+/*
+The scan records each value with the index where it was seen.
+For the current value it looks up the complement that would reach the target.
+The first hit returns the stored index and the current index.
+The map keeps one entry for every element when no pair exists early.
+*/

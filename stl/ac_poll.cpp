@@ -30,3 +30,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n * L * log n)
+// Space Complexity: O(n * L)
+// Pattern: STL Map - Vote frequency
+// explanation:
+/*
+Each of the n strings is inserted into a std::map, which keeps the keys sorted and increments that key's count.
+max_len tracks the highest count seen while reading.
+A second walk prints every key whose count equals that maximum, already in sorted order.
+Map operations compare whole strings, so a string of length L adds that factor.
+The map stores each distinct string once.
+*/

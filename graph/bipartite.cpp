@@ -54,3 +54,14 @@ signed main(){
     solve();
     return 0;
 }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: DFS - Bipartite coloring
+// explanation:
+/*
+dfs writes color[node] and then walks every neighbor in g.
+An unvisited neighbor is entered with the opposite color, computed as (1 + 2) minus the current color.
+A visited neighbor whose color matches the current node sets isBipartite to 0.
+The outer loop starts a new component at an unvisited node and stops once a conflict is found.
+*/

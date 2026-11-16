@@ -27,3 +27,14 @@ class Solution {
             return ans;
         }
     };
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Contribution - Letter Appeal
+// explanation:
+/*
+Appeal of a substring is how many distinct letters it contains, so each letter is totaled on its own.
+The string has n*(n+1)/2 substrings.
+For one letter the scan sums the blocks that miss it, and the total minus that sum is the substrings that contain it.
+Repeating the scan for all 26 letters and adding those counts is the appeal of every substring.
+*/

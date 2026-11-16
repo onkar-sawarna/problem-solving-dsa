@@ -28,3 +28,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Number Theory - Last digit cycle
+// explanation:
+/*
+Only the last digit of 1378^n is required, and that digit repeats every 4 multiplications.
+n is reduced modulo 4, and a multiple of 4 is mapped to the fourth place in the cycle.
+The last digit is then multiplied by 8 at most four times.
+n == 0 is printed as 1. A few integers are enough.
+*/

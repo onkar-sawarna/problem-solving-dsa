@@ -45,3 +45,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Constructive - Drop duplicate
+// explanation:
+/*
+a starts with b[0].
+A later b[i] that is at least b[i - 1] is appended once.
+A drop appends b[i] twice, so the adjacent maximum can fall to the new value.
+The printed length is the size of this built array, which stays linear in n.
+*/

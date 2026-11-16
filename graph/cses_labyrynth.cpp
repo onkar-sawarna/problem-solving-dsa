@@ -143,3 +143,14 @@ signed main() {
     solve(); // Call the solve function
     return 0;
 }
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n * m)
+// Pattern: BFS - Grid path
+// explanation:
+/*
+A is pushed with distance 0, and the queue tries the four steps D, R, U, L.
+A neighbor inside the grid, off a wall, and still at INF is enqueued.
+parent stores the previous cell and parent_char stores the letter of the step that entered it.
+When dist at B is below INF, those letters are followed from B back to A and the string is reversed.
+*/

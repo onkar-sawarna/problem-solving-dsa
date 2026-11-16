@@ -103,3 +103,14 @@ signed main(){
         solve();
     }
 }
+
+// Time Complexity: O(n * m * k)
+// Space Complexity: O(n * m * k)
+// Pattern: BFS - Wall budget
+// explanation:
+/*
+The queued state is a cell plus the number of walls already broken, starting from S with 0.
+Four neighbors are generated, and an open cell keeps the same broken count.
+A wall is added only when the broken count is still below k, and that new state is queued at distance plus one.
+dist is kept per cell and per broken count, then the smallest dist at E over counts 0 through k is tracked.
+*/

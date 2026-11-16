@@ -75,3 +75,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*S + q)
+// Space Complexity: O(n*S)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][sum_left] is 1 when some subset of the items from level onward sums to sum_left.
+Skipping x[level] is tried first. Taking x[level] is tried when the skip branch returns 0, and the state is 1 if that remainder can be made.
+The item list ends successfully only when the remaining sum is 0, and a negative remaining sum fails.
+S is the sum axis of dp, sized 10100. One shared table answers every query, so each state is computed once.
+Each of the q queries then reads rec(1, t) from that table.
+*/

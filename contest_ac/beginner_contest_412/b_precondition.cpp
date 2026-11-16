@@ -42,3 +42,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N * |T|)
+// Space Complexity: O(N + |T|)
+// Pattern: Brute Force - Uppercase check
+// explanation:
+/*
+A string of length 1 prints Yes immediately.
+For a longer s, every uppercase s[i] searches t for the previous character s[i - 1].
+t.find scans the precondition string from the start.
+A missing character prints No and returns.
+If every uppercase letter finds its predecessor in t, the answer is Yes.
+*/

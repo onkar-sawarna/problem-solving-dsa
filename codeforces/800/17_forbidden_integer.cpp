@@ -55,3 +55,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Constructive - Sum without x
+// explanation:
+/*
+When x is not 1, the sum is n ones.
+When x is 1, k == 1 cannot form any positive sum, and k == 2 cannot form an odd n, so both print No.
+An even n is built from n / 2 twos.
+An odd n is built from twos plus a final 3, which needs k at least 3.
+*/

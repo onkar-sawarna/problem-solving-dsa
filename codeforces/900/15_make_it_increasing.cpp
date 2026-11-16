@@ -55,3 +55,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log A)
+// Space Complexity: O(n)
+// Pattern: Greedy - Right to left halving
+// explanation:
+/*
+The scan starts at the second last index and walks toward the front.
+While a[i] is still at least a[i + 1], a[i] is halved and the operation count grows.
+Halving stops early once the value hits 0.
+If that 0 sits next to another 0, the sequence cannot rise and the answer becomes -1.
+*/

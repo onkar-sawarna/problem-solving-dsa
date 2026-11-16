@@ -67,3 +67,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Nonzero segments
+// explanation:
+/*
+One pass counts zeros. left then walks forward and right walks backward across outer zeros.
+A third pass between those ends looks for a zero sitting inside the nonzero span.
+An array of only zeros prints 0.
+A solid nonzero span prints 1, and an interior zero prints 2.
+*/

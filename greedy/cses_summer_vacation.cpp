@@ -54,3 +54,14 @@ void solve(){
         solve();
         return 0;
     }
+
+// Time Complexity: O(m + n log n)
+// Space Complexity: O(n + m)
+// Pattern: Greedy - Max heap by day
+// explanation:
+/*
+Each project with first_val at most m is appended to the bucket v[m - first_val].
+The index i walks from m - 1 down to 0, and every reward in v[i] is pushed onto the max heap.
+If the heap still holds a reward, its top value is popped and added to ans.
+Unpicked rewards stay in the heap, so a later smaller index can still choose one pushed earlier.
+*/

@@ -44,3 +44,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Sliding Window - No Repeated Character
+// explanation:
+/*
+The right edge takes the next character into the window.
+The left edge advances while that character occurs more than once inside the window.
+Each index enters once and leaves at most once, and the best length is updated on every valid window.
+The frequency map has one slot per character code, so it stays within the alphabet size.
+*/

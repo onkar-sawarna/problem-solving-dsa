@@ -53,3 +53,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Constructive - Max partition
+// explanation:
+/*
+mx is the largest value in a.
+Values below mx go into b, and every copy of mx goes into c.
+If b stays empty, every element equals mx and the answer is -1.
+Otherwise both groups are printed with their sizes.
+*/

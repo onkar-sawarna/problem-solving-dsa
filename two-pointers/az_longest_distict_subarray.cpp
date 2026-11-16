@@ -55,3 +55,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - Longest distinct
+// explanation:
+/*
+mp counts values between tail and head.
+head advances only while mp[a[head + 1]] is 0, then inserts that value.
+ans keeps the largest head - tail + 1 while every value in the window is unique.
+tail decrements mp[a[tail]] and steps forward, reopening room for a later copy of that value.
+*/

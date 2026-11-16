@@ -36,3 +36,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * N)
+// Space Complexity: O(1)
+// Pattern: Constructive - Alternating values
+// explanation:
+/*
+One loop writes n integers.
+Even indices always write -1.
+An odd index writes 2 when n is 2 or the index is the last position, and writes 3 for every other odd index.
+A space separates values, then a newline ends the test.
+Only a handful of scalars are kept.
+*/

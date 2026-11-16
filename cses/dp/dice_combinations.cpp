@@ -52,3 +52,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State memo[s] is the number of ways to build sum s with dice faces from 1 through 6.
+The transition adds the six states for s-1, s-2, s-3, s-4, s-5, and s-6.
+Sum 0 has one way, the empty sequence of throws. A negative sum has zero ways.
+There is one state for each sum up to n, the transition tries a constant number of faces, and the total is kept modulo 1e9+7.
+*/

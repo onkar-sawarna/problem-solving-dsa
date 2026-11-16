@@ -46,3 +46,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T log X)
+// Space Complexity: O(1)
+// Pattern: Math - Smallest digit
+// explanation:
+/*
+Digits of x are split off with modulo 10 and inserted into a set.
+A zero input is stored as the single digit 0.
+If 0 is among the digits, the answer is 0 and the function returns.
+Otherwise the ordered set makes begin() the smallest digit that occurred.
+At most ten distinct digits are stored.
+*/

@@ -90,3 +90,14 @@ int main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Tree build - Inorder and postorder
+// explanation:
+/*
+inmap records the inorder index of each value.
+The postorder value at pe becomes the root, and inmap locates it inside the inorder range.
+numsLeft is the number of inorder positions to the left of that root.
+The left recursion takes the first numsLeft postorder slots, and the right recursion stops just before pe.
+*/

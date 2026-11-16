@@ -38,3 +38,14 @@ using namespace std;
         solve();
         return 0;
     }
+
+// Time Complexity: O(n log (n * m))
+// Space Complexity: O(1)
+// Pattern: Binary search on answer - Kth value
+// explanation:
+/*
+lo and hi bound the candidate table entry, from 1 to n * m.
+check walks the n rows and adds min(mid / i, m), the count of entries in that row that are at most mid.
+When the summed count is at least k, hi moves to mid - 1 and ans stores mid.
+Otherwise lo moves to mid + 1, so the search settles on the smallest feasible entry.
+*/

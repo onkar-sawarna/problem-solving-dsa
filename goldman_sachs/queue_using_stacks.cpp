@@ -79,3 +79,14 @@ signed main() {
     
     return 0;
 }
+
+// Time Complexity: O(1) amortized
+// Space Complexity: O(n)
+// Pattern: Two Stacks - Queue Simulation
+// explanation:
+/*
+push writes the new value onto inStack.
+pop and peek pour inStack onto outStack only when outStack is empty, reversing that batch into queue order.
+Each value is moved from inStack to outStack once, so a sequence of operations is amortized constant time.
+The two stacks together hold every value still in the queue.
+*/

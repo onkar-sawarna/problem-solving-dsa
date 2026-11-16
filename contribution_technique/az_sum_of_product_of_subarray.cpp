@@ -21,3 +21,14 @@ signed main(){
     cout<<ans<<"\n";
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Contribution - Running Product
+// explanation:
+/*
+prev_sum is the sum of the products of all subarrays that end at the previous index.
+Multiplying by arr[i] extends each of those products through i.
+The added 1 inside (prev_sum+1) starts the new single-element product arr[i], and ans accumulates every ending position.
+The pass is linear and the extra state is two integers.
+*/

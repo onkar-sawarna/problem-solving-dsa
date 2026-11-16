@@ -43,3 +43,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+// Pattern: Math - Leading digit
+// explanation:
+/*
+The first loop divides a copy of n by 10 and counts its digits.
+The second loop builds 10 to the power of digits - 1, the weight of the leading place.
+The count of extremely round numbers up to n is 9 per shorter length, plus the leading digit n / quotient.
+Both loops run once per digit.
+*/

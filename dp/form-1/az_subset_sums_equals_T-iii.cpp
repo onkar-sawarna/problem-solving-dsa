@@ -92,3 +92,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n*S + q*n)
+// Space Complexity: O(n*S)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][sum_left] is 1 when some subset of the items from level onward sums to sum_left.
+Skipping x[level] is tried first. Taking x[level] is tried when the skip branch returns 0, and the state is 1 if that remainder can be made.
+After the last item the state is 1 only for sum_left 0, and a negative sum_left is 0.
+S is the sum axis of this table, sized 10100, and that table is shared by all q queries so each state is filled once.
+printSubset follows the same skip-or-take choice and writes x[level] when the take branch is the successful one, which walks O(n) items per query.
+*/

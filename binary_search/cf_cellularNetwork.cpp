@@ -42,3 +42,14 @@ signed main() {
     solve();
     return 0;
 }
+
+// Time Complexity: O(n log m)
+// Space Complexity: O(n + m)
+// Pattern: Binary search on index - Nearest tower
+// explanation:
+/*
+For each city a[i], lower_bound on b returns the first tower at or after that city.
+The distance to that tower is considered when the iterator has not reached b + m.
+The tower immediately before it is also considered when the iterator is past the start of b.
+max_min_dist keeps the largest of these per-city minimums.
+*/

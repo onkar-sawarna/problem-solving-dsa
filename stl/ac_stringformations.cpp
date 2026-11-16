@@ -46,3 +46,15 @@ int main() {
     }
     return 0;
 }
+
+// Time Complexity: O(n + q)
+// Space Complexity: O(n + q)
+// Pattern: Deque - Lazy reversal
+// explanation:
+/*
+The starting string is copied into a deque.
+Type 1 only toggles flipped, so the characters are not reversed in place.
+Type 2 pushes the new character to the front or the back, and flipped swaps those two sides before the push.
+The final walk prints the deque forward, or backward when flipped is set.
+Each query is a constant-time deque update, and the deque stores the original characters plus every insertion.
+*/

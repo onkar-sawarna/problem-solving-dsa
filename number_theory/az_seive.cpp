@@ -79,3 +79,15 @@ int main()
     primeFactorization(x);
     return 0;
 }
+
+// Time Complexity: O(N log log N * log x)
+// Space Complexity: O(N)
+// Pattern: Number Theory - Smallest prime factor
+// explanation:
+/*
+N is fixed near 100000. spf fills a smallest-prime array by marking multiples of each prime.
+primeFactorization divides x by spf(x) until x is 1, and each factor calls spf twice.
+Every call rebuilds that array instead of keeping it.
+divisors and seiveOfEratosthenes are defined in this file, and main only factors one integer.
+The table is a local array of N ints.
+*/

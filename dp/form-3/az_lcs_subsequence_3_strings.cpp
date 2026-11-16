@@ -54,3 +54,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(|a|*|b|*|c|)
+// Space Complexity: O(|a|*|b|*|c|)
+// Pattern: DP Form 3 - three strings, state (i, j, k)
+// explanation:
+/*
+State dp[i][j][k] is the longest common subsequence of the suffixes a[i..], b[j..], and c[k..].
+The transition keeps the best of skipping a[i], skipping b[j], and skipping c[k].
+When a[i], b[j], and c[k] are the same character it also considers 1 plus the state with all three indexes advanced.
+An index past any string returns 0.
+The table is indexed by the three positions, and each cell tries a constant number of moves.
+*/

@@ -50,3 +50,14 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Prefix Sum - Half the twos
+// explanation:
+/*
+The first pass counts every 2. An odd total cannot be split into equal products, so the answer is -1.
+A total of 0 prints index 1, because every product is 1.
+Otherwise need is half the twos, and the second pass grows cnt until it hits need.
+The 1-based index where the running count matches need is the cut.
+*/

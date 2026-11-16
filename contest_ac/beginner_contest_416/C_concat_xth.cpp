@@ -60,3 +60,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n^k * k * L * log(n^k))
+// Space Complexity: O(n^k * k * L)
+// Pattern: Brute Force - All concatenations
+// explanation:
+/*
+x is converted to a 0-based rank.
+Every integer from 0 to n^k - 1 is decoded in base n into k indices, with the rightmost index taken from the least significant digit.
+The chosen strings are joined in that index order and stored.
+The vector is then sorted lexicographically.
+The printed line is the string at position x after the sort. L is the length of one input string.
+*/

@@ -61,3 +61,15 @@ signed main() {
     solve(); 
     return 0; 
 }
+
+// Time Complexity: O(N log N)
+// Space Complexity: O(N)
+// Pattern: Math - Circle triples
+// explanation:
+/*
+If L is not divisible by 3, the answer is 0 because no equal side fits on the circle.
+Otherwise the side is L / 3. Points are placed by adding the given gaps modulo L, and a map counts copies of each position.
+For every occupied position a, the code looks up a + L / 3 and a + 2L / 3, also modulo L.
+When both keys exist, the product of the three frequencies is added.
+Each geometric triple is seen from all three vertices, so the total is divided by 3.
+*/

@@ -66,3 +66,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Sorting - Top Five Average
+// explanation:
+/*
+Scores are appended to a list under each student id, and the ordered map yields ids in sorted order.
+Each student's list is sorted descending and the first five scores are averaged with integer division.
+Sorting dominates: a student who holds every score costs n log n, and the map inserts are within that bound.
+Every score is stored in those lists.
+*/

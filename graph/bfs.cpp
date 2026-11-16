@@ -59,3 +59,14 @@ void solve(){
         solve();
         return 0;
     }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: BFS - Unweighted distances
+// explanation:
+/*
+Each unvisited node from 1 to n starts a bfs with distance 0.
+The queue pops a node and walks g[node].
+An unseen neighbor is marked in vis, given distance one larger than the current node, and pushed.
+Both ends of each undirected edge are stored, and every node is enqueued at most once.
+*/

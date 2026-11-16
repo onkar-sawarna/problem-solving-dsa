@@ -55,3 +55,15 @@ void generateFractal(vector<string>& fractal, const vector<string>& model, int r
 
     return 0;
     }
+
+// Time Complexity: O(n^(2k))
+// Space Complexity: O(n^(2k))
+// Pattern: Recursion - Fractal blocks
+// explanation:
+/*
+The canvas side is n multiplied k times, so the grid has n^(2k) cells.
+A '*' in the model paints its whole current block with a pair of loops.
+A '.' recurses into that block with the same model and step decreased by one.
+Each cell is written a constant number of times, then the grid is printed once.
+The picture is stored in full, and the recursion stack is only k frames.
+*/

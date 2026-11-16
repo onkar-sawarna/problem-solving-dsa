@@ -50,3 +50,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Four and six wheels
+// explanation:
+/*
+n is rejected when it is odd or smaller than 4, since neither bus size fits.
+Otherwise the fewest buses is the ceiling of n / 6, written as (n + 5) / 6.
+The most buses is n / 4, using as many 4-wheel buses as possible.
+Both values come from arithmetic on n, with no loop over the wheels.
+*/

@@ -49,3 +49,15 @@ signed main() {
     }
     return 0;
 }
+
+// Time Complexity: O(MAXN + t log MOD)
+// Space Complexity: O(MAXN)
+// Pattern: Number Theory - Factorial binomial
+// explanation:
+/*
+fact is filled from 1 through MAXN-1, and MAXN is 1000005, with one modular multiply per entry.
+A query returns 0 when r is outside 0..n.
+Otherwise it multiplies fact[n] by the modular inverse of fact[r] * fact[n-r].
+That inverse is b^(MOD-2) by binary exponentiation, so one query is O(log MOD).
+The factorial table is the only large allocation.
+*/

@@ -26,3 +26,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(t)
+// Space Complexity: O(1)
+// Pattern: Math - Letter pair index
+// explanation:
+/*
+Each test is one two-letter word. The first letter selects a block of 25 partners.
+The second letter is the offset in that block, and the offset skips the case where both letters match.
+The index is those two arithmetic steps.
+No word table is stored.
+*/

@@ -51,3 +51,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N + Q)
+// Space Complexity: O(N)
+// Pattern: Math - Neighbor flips
+// explanation:
+/*
+squares[0] and squares[N + 1] stay false, so the neighbor tests need no extra edge cases.
+Turning a white cell black adds an interval when the left neighbor is white, and cancels one when the right neighbor is already black, which is a merge.
+Turning a black cell white removes an interval when the left neighbor is white, and adds one when the right neighbor is black, which is a split.
+Each query flips one cell, adjusts the counter from those two neighbors, and prints it.
+The boolean array is allocated once for the whole row.
+*/

@@ -304,3 +304,15 @@ int main() {
 
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Brute Force - Two delivery orders
+// explanation:
+/*
+findBestRoute tries the six orders that pick up each meal before it is delivered.
+calculateTotalTime walks the four stops and adds Haversine distance converted at 20 km/h.
+A pickup waits until that restaurant's preparation time when Aman arrives early.
+A sequence that delivers before its pickup, or that skips a stop, is discarded as invalid.
+The best finite time and its route string are kept. The candidate list is fixed at two orders.
+*/

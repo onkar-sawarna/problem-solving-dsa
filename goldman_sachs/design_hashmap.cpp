@@ -87,3 +87,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(10^6)
+// Pattern: Direct Address - Array Map
+// explanation:
+/*
+The key is an index into two fixed arrays, data and exists, each of length 1000001.
+put stores the value and marks the key present, get returns it, and remove clears the mark.
+The constructor fills both arrays once across that fixed range.
+After construction, each call is one index operation.
+*/

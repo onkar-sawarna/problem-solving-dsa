@@ -85,3 +85,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(H * W * log(H * W + K))
+// Space Complexity: O(H * W + K)
+// Pattern: Brute Force - Grid BFS
+// explanation:
+/*
+Banned cells are inserted into a set of coordinates.
+BFS pushes (1, 1) and then tries the four adjacent steps, staying inside 1..H and 1..W.
+A neighbor is queued only when it is absent from both the obstacle set and the visited set.
+Both lookups are logarithmic, and every reached cell can be inserted once, so the run follows the open area of the board.
+Yes is printed when (H, W) is dequeued. No is printed when the queue empties first.
+*/

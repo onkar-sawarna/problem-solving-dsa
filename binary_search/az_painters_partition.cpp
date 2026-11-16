@@ -67,3 +67,14 @@ int arr[100100];
         }
         return 0;
     }
+
+// Time Complexity: O(n log 1e14)
+// Space Complexity: O(n)
+// Pattern: Binary search on answer - Painter time
+// explanation:
+/*
+left and right bound the allowed maximum time, and mid is tested by canPaint.
+canPaint walks arr from left to right and rejects mid if any single wall is longer than mid.
+A wall that fits the current painter is added, and a wall that does not fit starts another painter.
+More than m painters rejects mid. A successful mid moves right to mid - 1, and a failed mid moves left to mid + 1.
+*/

@@ -53,3 +53,14 @@ int main() {
  *
  *  3) If time permits, add some additional test cases.
  */
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: String Scan - Longest Uniform Run
+// explanation:
+/*
+One forward pass tracks the start and length of the current run of equal characters.
+When the character changes, that run is compared with the longest run saved so far.
+The same comparison runs once after the loop so a run that reaches the end is included.
+A handful of integer indexes are the only extra state.
+*/

@@ -37,3 +37,15 @@ signed main() {
     while (t--) solve();
     return 0;
 }
+
+// Time Complexity: O(T * N)
+// Space Complexity: O(N)
+// Pattern: Greedy - Alternating ends
+// explanation:
+/*
+The n values are pushed onto a deque in input order.
+flag starts true and flips after every pop.
+A true step removes the smaller end. A false step removes the larger end.
+Equal ends take the else branch, so R is printed and the back is popped.
+Each element leaves once, and the direction string has length n.
+*/

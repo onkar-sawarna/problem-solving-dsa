@@ -40,3 +40,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Sort or swap
+// explanation:
+/*
+a_copy is a full copy of a, then it is sorted.
+If a already matches that sorted copy, the boxes are in order and the answer is YES.
+If k is greater than 1, adjacent swaps are available and the answer is also YES.
+k equal to 1 on an unsorted array leaves no legal move, so the answer is NO.
+*/

@@ -62,3 +62,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Sliding window - Fixed length
+// explanation:
+/*
+expected_values[i] stores (p_i + 1) / 2 for each die.
+head moves forward while the window is shorter than k, adding the new expected value into sum.
+When head - tail + 1 equals k, ans keeps the larger sum.
+tail then subtracts its value and steps forward, so the window slides one die at a time.
+*/

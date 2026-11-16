@@ -50,3 +50,14 @@ int n,m;
         solve();
         return 0;
     }
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+// Pattern: DFS - Connected components
+// explanation:
+/*
+Edges are stored in both directions in g.
+Any node from 1 to n that is still unseen starts dfs with a fresh component number.
+dfs marks the node in vis, records comp_number, and recurses to each unvisited neighbor.
+comp_size grows once per node, so each node and each edge is handled a constant number of times.
+*/

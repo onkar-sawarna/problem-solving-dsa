@@ -38,3 +38,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T)
+// Space Complexity: O(1)
+// Pattern: Math - Inclusion exclusion
+// explanation:
+/*
+func(x) counts integers up to x that are not divisible by 2, 3, 5, or 7.
+Four buckets subtract multiples of those primes, with the mixed products put back or removed by inclusion-exclusion.
+The leftover value of x is the count that avoids every one of those factors.
+The printed range count is func(r) - func(l - 1).
+Each call is a fixed set of divisions plus a loop of length 4.
+*/

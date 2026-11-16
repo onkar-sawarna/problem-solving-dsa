@@ -61,3 +61,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Kadane - Circular Maximum
+// explanation:
+/*
+One pass keeps the best non-wrapping subarray and the minimum subarray, plus the total sum.
+A wrapping answer is the total minus the inner subarray that is left out of the wrap.
+When that minimum is the whole array, every value is negative and the non-wrapping maximum is returned.
+Only a few running integers are allocated.
+*/

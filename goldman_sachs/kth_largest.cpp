@@ -46,3 +46,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log k)
+// Space Complexity: O(k)
+// Pattern: Heap - Kth Largest
+// explanation:
+/*
+A min-heap keeps only the k largest values seen so far.
+Each of the n numbers is pushed, and the root is popped once the heap grows past k.
+The root is then the kth largest value.
+Every push and pop is logarithmic in the heap size, which stays at most k.
+*/

@@ -61,3 +61,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State dp[level][lastthree] counts binary strings on the remaining positions whose previous three bits are lastthree.
+The blocked substring is 0100. When level is at least 3 and lastthree equals 2, the only move appends 1 and stores mask 5.
+Every other state appends 0 or appends 1 and keeps the new low three bits with a mask of 7.
+Reaching level n counts as one finished string.
+The bit mask has a fixed number of values, so the table is linear in n and each state branches a constant number of times.
+*/

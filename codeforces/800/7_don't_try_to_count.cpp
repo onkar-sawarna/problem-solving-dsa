@@ -46,3 +46,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n + m)
+// Pattern: Brute Force - String doubling
+// explanation:
+/*
+If s is already a substring of x, the answer is 0.
+Otherwise the loop appends x to itself and searches again, at most six times.
+Each successful search prints how many doublings were used.
+Six misses print -1. The growing copies stay a constant multiple of n, and each search scans against s.
+*/

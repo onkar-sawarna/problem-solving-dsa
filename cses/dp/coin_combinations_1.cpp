@@ -53,3 +53,14 @@ signed main() {
 
     return 0;
 }
+
+// Time Complexity: O(n*m)
+// Space Complexity: O(m)
+// Pattern: DP Form 1 - state is a level on one sequence
+// explanation:
+/*
+State memo[s] is the number of ordered ways to make sum s, so two different orders of the same coins count separately.
+The transition adds, for each coin, the number of ways to make s minus that coin.
+Sum 0 has one way, the empty selection. A negative sum has zero ways.
+There is one state for each sum up to m, and each state loops over all n coins. The total is kept modulo 1e9+7.
+*/

@@ -41,3 +41,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Greedy - Up then left
+// explanation:
+/*
+A destination below the source is impossible, because every diagonal move raises y.
+moves is the vertical gap, and source_x shifts right by the same amount.
+If the shifted x is still left of the destination, no remaining move can increase x alone, so the answer is -1.
+Otherwise the leftover left steps are added to moves.
+*/

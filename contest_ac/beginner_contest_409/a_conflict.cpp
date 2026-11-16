@@ -32,3 +32,15 @@ using vvi = vector<vi>;          // Alias for vector<vector<long long>>
         solve();
         return 0;
     }
+
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Aligned scan
+// explanation:
+/*
+t and a are read and walked at the same index.
+The first position where both characters are o prints Yes and sets flag.
+The break leaves the rest of the strings unread by the loop.
+If flag is still clear after the scan, the answer is No.
+Both strings are stored in full.
+*/

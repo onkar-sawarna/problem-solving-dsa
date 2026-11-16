@@ -43,3 +43,14 @@ int main() {
 
     return 0;
 }
+
+// Time Complexity: O(n + Q)
+// Space Complexity: O(n)
+// Pattern: Prefix sum - Range query
+// explanation:
+/*
+calculatePrefixSum sets prefixSum[0] to arr[0], then each later index adds arr[i] onto prefixSum[i - 1].
+queryRangeSum returns prefixSum[R] when L is 0.
+For any later L it returns prefixSum[R] minus prefixSum[L - 1].
+Each of the Q queries reads one or two of those already built cells.
+*/

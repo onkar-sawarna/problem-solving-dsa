@@ -34,3 +34,15 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+// Pattern: Number Theory - Modular difference of powers
+// explanation:
+/*
+The printed value is (27^n - 7^n) modulo 1000000007.
+Each power is iterative binary exponentiation: square the base and halve the exponent.
+The two loops together follow the bits of n.
+A multiple of the modulus is added before the subtraction so the residue stays non-negative.
+Only a few integers are stored.
+*/

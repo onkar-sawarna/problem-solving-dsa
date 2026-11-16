@@ -37,3 +37,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N)
+// Space Complexity: O(N)
+// Pattern: Math - Sum compare
+// explanation:
+/*
+The n values are stored and added into sum in the same loop.
+The decision is one comparison of that sum with m.
+sum <= m prints Yes.
+A larger sum prints No.
+The loop body is constant work per index.
+*/

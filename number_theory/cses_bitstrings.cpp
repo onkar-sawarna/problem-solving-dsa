@@ -27,3 +27,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+// Pattern: Number Theory - Modular power of two
+// explanation:
+/*
+The number of bit strings of length n is 2^n, printed modulo 1000000007.
+iterativeBinpow squares the base and halves the exponent, multiplying the answer when the current bit is set.
+The loop follows the bits of n.
+A few integers hold the base, the exponent, and the running product.
+*/

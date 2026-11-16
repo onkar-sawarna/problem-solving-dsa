@@ -78,3 +78,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(denominator)
+// Space Complexity: O(denominator)
+// Pattern: Long Division - Repeating Remainder
+// explanation:
+/*
+The sign and the integer part are written first, then division emits one decimal digit per step.
+Each remainder is stored with the string index where it first appeared.
+When a remainder shows up again, the digits from that index to the end are wrapped in parentheses.
+Remainders lie in 0 through denominator-1, so the loop and the map are bounded by the denominator.
+*/

@@ -94,3 +94,15 @@ signed main() {
     solve();
     return 0;
 }
+
+// Time Complexity: O(P log P + P log N)
+// Space Complexity: O(P)
+// Pattern: Brute Force - Palindrome seeds
+// explanation:
+/*
+Odd-length decimal palindromes mirror a seed after dropping its last digit. Even-length ones mirror the whole seed.
+Both loops walk seeds from 1, stop at 1000000, and also stop once the built value exceeds N.
+A set stores every palindrome that fits, which sorts them and removes duplicates.
+Each stored value is rewritten in base A by repeated division, then kept in the sum only when that digit string is a palindrome.
+P is the number of decimal palindromes stored.
+*/

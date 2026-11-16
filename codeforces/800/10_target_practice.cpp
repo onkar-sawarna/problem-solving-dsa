@@ -49,3 +49,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Brute Force - Ring score
+// explanation:
+/*
+Both loops run over a fixed 10 by 10 board, so the work does not grow with a variable n.
+Each X scores one more than its distance to the nearest edge.
+layer is the minimum of the row distance and the column distance, and the cell adds layer + 1.
+Empty cells add nothing, and total_points is printed after both loops.
+*/

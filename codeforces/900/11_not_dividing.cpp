@@ -39,3 +39,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Greedy - Adjacent bump
+// explanation:
+/*
+The pass walks i from left to right and edits a[i] in place.
+A 1 is raised to 2 before the divisibility test, because 1 divides every neighbor.
+If a[i] is still a multiple of a[i - 1], it is increased by one.
+That single extra step is the whole repair at index i.
+*/

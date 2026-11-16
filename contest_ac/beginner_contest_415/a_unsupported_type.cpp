@@ -38,3 +38,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(N log N)
+// Space Complexity: O(N)
+// Pattern: Brute Force - Set lookup
+// explanation:
+/*
+The n numbers are copied into a set, which orders them and drops duplicates.
+find(x) searches that tree.
+A hit prints Yes.
+A miss prints No.
+Building the set dominates the single lookup.
+*/

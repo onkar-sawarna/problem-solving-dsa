@@ -72,3 +72,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(10^4)
+// Space Complexity: O(10^4)
+// Pattern: BFS - Lock Wheels
+// explanation:
+/*
+A code has four digits, so the lock has 10000 states.
+BFS starts at 0000 and each state turns one wheel one step in either direction, which is 8 neighbors.
+Dead ends are rejected and the visited set admits each code once.
+The queue and the visited set are bounded by the number of codes.
+*/

@@ -51,3 +51,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n + q)
+// Space Complexity: O(n)
+// Pattern: Prefix Sum - Range parity
+// explanation:
+/*
+prefix[i] stores the sum of a[0..i], built in one forward pass.
+Each query reads l, r, and k, then converts l and r to zero-based indexes.
+The range sum is prefix[r] when l is 0, otherwise prefix[r] - prefix[l - 1].
+Replacing that range by k keeps the total odd only when the rebuilt sum is odd, which prints YES.
+*/

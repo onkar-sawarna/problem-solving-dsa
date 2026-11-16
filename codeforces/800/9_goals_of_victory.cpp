@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// Pattern: Math - Missing total
+// explanation:
+/*
+The n efficiencies sum to zero, and only n - 1 of them are given.
+sum accumulates those given values one by one.
+The missing efficiency is the negation of that sum.
+No array is stored; the running total is the only state.
+*/

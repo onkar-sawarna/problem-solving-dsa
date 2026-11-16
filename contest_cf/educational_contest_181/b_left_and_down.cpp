@@ -26,3 +26,15 @@ signed main() {
             cout << 2 << endl;
     }
 }
+
+// Time Complexity: O(T log A)
+// Space Complexity: O(1)
+// Pattern: Math - GCD test
+// explanation:
+/*
+Each test reads a, b, and k.
+__gcd(a, b) is the Euclidean algorithm, shrinking the pair by repeated division.
+The test compares max(a, b) / gcd with k.
+A ratio that fits in k prints 1. A larger ratio prints 2.
+No arrays are allocated.
+*/

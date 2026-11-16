@@ -53,3 +53,15 @@ signed main() {
     while (t--) solve();
     return 0;
 }
+
+// Time Complexity: O(M log M + N * M)
+// Space Complexity: O(M)
+// Pattern: Greedy - Smallest net cost
+// explanation:
+/*
+Offers are sorted by A - B, bottles spent minus bottles returned.
+Each round moves every full bottle into the empty pile, then walks the offers until the first A that fits.
+That offer is redeemed empty / A times: stickers increase, A empties are spent per copy, and B full bottles come back.
+Because the list is sorted, the first offer that fits is the smallest net cost among offers the current empties can pay.
+When each redemption destroys at least one bottle, the round can repeat up to N times and each round may scan all M offers.
+*/

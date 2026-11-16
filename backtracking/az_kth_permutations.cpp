@@ -35,3 +35,14 @@ signed main(){
     }
     return 0;
 }
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
+// Pattern: Factorial Number System - Kth Permutation
+// explanation:
+/*
+fact[i] is i!, the size of a block of permutations of the remaining suffix.
+The next value is the unused number at index (k-1) / fact[n-1].
+That value is erased and k drops by the permutations skipped in front of it.
+Erasing from a vector on each of the n steps costs n^2, and the lists are linear.
+*/

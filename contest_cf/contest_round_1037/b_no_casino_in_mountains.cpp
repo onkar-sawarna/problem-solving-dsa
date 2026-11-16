@@ -47,3 +47,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * N)
+// Space Complexity: O(N)
+// Pattern: Greedy - Zero streak
+// explanation:
+/*
+current_day counts consecutive zeros and drops back to 0 on any other value.
+Reaching exactly k records one hike and clears the streak.
+i is then increased by one inside the body, and the for-loop increases it again, so the next day is skipped as rest.
+That skipped index is never added into the next streak.
+The printed number is how many times a streak of k was completed.
+*/

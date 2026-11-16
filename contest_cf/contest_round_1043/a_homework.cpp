@@ -43,3 +43,15 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(T * (N + M)^2)
+// Space Complexity: O(N + M)
+// Pattern: Constructive - End inserts
+// explanation:
+/*
+res starts as a copy of a.
+For each of the m characters, V builds a new string with b[i] on the front, and any other instruction builds one with b[i] on the back.
+Each assignment copies the whole current string.
+The lengths run from n through n + m, so the copies add up quadratically.
+The printed line is the finished res.
+*/

@@ -33,3 +33,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+// Pattern: Math - Shared prefix room
+// explanation:
+/*
+a and b are the longest prefixes that match inside two permutations of length n.
+They fit when a + b + 2 <= n, leaving a free index between the two blocks.
+They also fit when a and b are both exactly n, so both permutations are fixed in full.
+Every other pair of lengths fails the check.
+*/

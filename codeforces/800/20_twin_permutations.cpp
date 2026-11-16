@@ -34,3 +34,14 @@ signed main()
     }
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Pattern: Constructive - Fixed complement
+// explanation:
+/*
+Each printed value is n + 1 - a[i].
+Added back to a[i], every position sums to the same constant n + 1.
+The loop writes that complement for every index.
+a and b are both length n, which is the space this function keeps.
+*/

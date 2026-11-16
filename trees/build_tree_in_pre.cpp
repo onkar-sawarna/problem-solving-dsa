@@ -92,3 +92,14 @@ int main()
     }
     return 0;
 }
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+// Pattern: Tree build - Inorder and preorder
+// explanation:
+/*
+inmap records the inorder index of each value.
+The preorder value at ps becomes the root, and inmap locates it inside the inorder range.
+numsLeft is the number of inorder positions to the left of that root.
+The left recursion consumes the next numsLeft preorder values, and the right recursion consumes what remains.
+*/
