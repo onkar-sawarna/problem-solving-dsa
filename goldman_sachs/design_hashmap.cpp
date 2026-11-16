@@ -1,3 +1,4 @@
+// Question: Design a hash map that supports inserting a key and value, looking up a key, and deleting a key.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

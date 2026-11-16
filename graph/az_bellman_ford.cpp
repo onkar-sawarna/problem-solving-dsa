@@ -1,3 +1,4 @@
+// Question: What is the cheapest path from node 1 to node n, or does a negative cycle make that cost unbounded?
 #include <bits/stdc++.h>
 
 using namespace std;

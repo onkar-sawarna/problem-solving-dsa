@@ -1,3 +1,4 @@
+// Question: What is the smallest tower radius that puts every city within range of some tower?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

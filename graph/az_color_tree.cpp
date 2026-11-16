@@ -1,3 +1,4 @@
+// Question: What is the fewest colors needed so that no two adjacent nodes in the tree share a color?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

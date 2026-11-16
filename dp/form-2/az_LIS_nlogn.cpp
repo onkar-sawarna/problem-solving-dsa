@@ -1,3 +1,4 @@
+// Question: What is one longest strictly increasing subsequence of the array, and what is its length?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

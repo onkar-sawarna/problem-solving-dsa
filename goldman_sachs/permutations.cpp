@@ -1,3 +1,4 @@
+// Question: Return every permutation of an array of distinct integers.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

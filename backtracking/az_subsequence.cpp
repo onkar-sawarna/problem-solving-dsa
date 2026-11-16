@@ -1,3 +1,4 @@
+// Question: Print every subsequence of the given array.
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

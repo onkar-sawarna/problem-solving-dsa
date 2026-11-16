@@ -1,3 +1,4 @@
+// Question: What is the array after each update adds a value to every position in an inclusive range?
 #include <iostream>
 #include <vector>
 

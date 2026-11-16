@@ -1,3 +1,4 @@
+// Question: How many ways can a stick of length n be cut into four positive integer sides of a rectangle?
 #include <iostream>
 using namespace std;
 #define int long long 

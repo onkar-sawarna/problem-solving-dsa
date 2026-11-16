@@ -1,3 +1,4 @@
+// Question: For each queried pair of nodes, what is the shortest distance between them?
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,4 @@
+// Question: How many triples of points have their two outermost points at most distance d apart?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

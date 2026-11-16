@@ -1,3 +1,4 @@
+// Question: What is the sum of the array from index L through index R for each query?
 #include <iostream>
 #include <vector>
 

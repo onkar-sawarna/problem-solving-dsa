@@ -1,3 +1,4 @@
+// Question: How should the binary tree's values be grouped when each diagonal is read by walking right?
 #include <bits/stdc++.h>
 
 using namespace std;

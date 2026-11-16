@@ -1,3 +1,4 @@
+// Question: How many nodes lie on a cycle when each index i points to (i + 1 + a[i]) modulo n?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

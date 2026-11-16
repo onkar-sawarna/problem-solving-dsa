@@ -1,3 +1,4 @@
+// Question: Find the minimum cost to make bamboos of lengths A, B, and C from the given pieces, where joining two pieces costs 10 and changing a length by one costs 1.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

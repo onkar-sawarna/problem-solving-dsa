@@ -1,3 +1,4 @@
+// Question: Can you rearrange the array so that it alternates between at most two distinct values?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: Given the gaps between consecutive points on a line, what is each point's distance to every later point?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

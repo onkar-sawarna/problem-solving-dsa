@@ -1,3 +1,4 @@
+// Question: What is the minimum number of times you must replace an element by half of itself to make the array strictly increasing, or is it impossible?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

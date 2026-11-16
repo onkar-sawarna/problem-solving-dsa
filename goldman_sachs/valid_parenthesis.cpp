@@ -1,3 +1,4 @@
+// Question: Determine whether every bracket in a string is closed by the matching bracket in the correct order.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

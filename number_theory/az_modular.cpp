@@ -1,3 +1,4 @@
+// Question: What is a to the power b modulo 10^9+7 for each pair?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

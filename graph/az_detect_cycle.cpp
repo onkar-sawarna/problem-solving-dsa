@@ -1,3 +1,4 @@
+// Question: Does the directed graph contain a cycle?
 #include <bits/stdc++.h>
 using namespace std;
 

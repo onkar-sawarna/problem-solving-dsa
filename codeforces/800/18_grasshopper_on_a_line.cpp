@@ -1,3 +1,4 @@
+// Question: What is the shortest sequence of forward jumps that adds up to x if no jump length is divisible by k?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

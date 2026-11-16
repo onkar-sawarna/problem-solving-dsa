@@ -1,3 +1,4 @@
+// Question: How many bit strings of length n are there, modulo 10^9+7?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

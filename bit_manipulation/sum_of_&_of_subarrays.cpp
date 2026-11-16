@@ -1,3 +1,4 @@
+// Question: Find the sum of the bitwise AND of every contiguous subarray.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

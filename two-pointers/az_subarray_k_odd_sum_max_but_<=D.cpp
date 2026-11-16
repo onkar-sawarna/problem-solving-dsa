@@ -1,3 +1,4 @@
+// Question: What is the largest subarray sum that is at most D and contains at most K odd numbers?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

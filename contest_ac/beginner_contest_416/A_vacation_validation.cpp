@@ -1,3 +1,4 @@
+// Question: Are all characters from position l through r equal to o?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

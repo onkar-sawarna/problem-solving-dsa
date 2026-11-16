@@ -1,3 +1,4 @@
+// Question: Two players take turns adding or subtracting 1, and whoever first makes the number divisible by 3 wins; who wins if the first player starts from n?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

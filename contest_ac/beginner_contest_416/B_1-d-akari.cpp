@@ -1,3 +1,4 @@
+// Question: Where should lamps be placed on the empty cells so that every empty cell is lit and a lamp cannot shine past a block?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

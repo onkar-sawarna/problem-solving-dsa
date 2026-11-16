@@ -1,3 +1,4 @@
+// Question: How can the letters of s be rearranged so that neither FFT nor NTT appears as a substring?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

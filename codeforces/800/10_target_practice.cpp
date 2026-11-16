@@ -1,3 +1,4 @@
+// Question: What total score do the arrows earn on the 10 by 10 target?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

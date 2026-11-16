@@ -1,3 +1,4 @@
+// Question: How many ones are in the substring from l to r of the string formed by n/2, the bit n mod 2, and n/2 again?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: Print every way to place exactly k queens on an n by n board so that no two attack each other.
 #include <bits/stdc++.h>
 using namespace std;
 

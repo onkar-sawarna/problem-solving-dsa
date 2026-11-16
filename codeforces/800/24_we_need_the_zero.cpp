@@ -1,3 +1,4 @@
+// Question: Which number, XORed into every element, makes the XOR of the whole array zero, or is no such number possible?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);

@@ -1,3 +1,4 @@
+// Question: How many squares can an (a, b)-knight occupy and attack both the king and the queen?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

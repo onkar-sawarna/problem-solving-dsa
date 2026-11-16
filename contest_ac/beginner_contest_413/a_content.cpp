@@ -1,3 +1,4 @@
+// Question: Do the n sizes fit inside a capacity of m?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

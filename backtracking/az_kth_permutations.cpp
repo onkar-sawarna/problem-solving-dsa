@@ -1,3 +1,4 @@
+// Question: Find the kth permutation of the numbers 1 through n in lexicographic order.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

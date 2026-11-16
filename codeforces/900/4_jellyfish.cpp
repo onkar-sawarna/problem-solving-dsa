@@ -1,3 +1,4 @@
+// Question: How many seconds can you delay the bomb if each tool raises the timer but the timer cannot pass its cap?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

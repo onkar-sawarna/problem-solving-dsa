@@ -1,3 +1,4 @@
+// Question: If the efficiencies of n teams add up to zero, what is the missing team's efficiency?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

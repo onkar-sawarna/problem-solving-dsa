@@ -1,3 +1,4 @@
+// Question: Which values remain after one occurrence of each value in the second list is deleted from the first list?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

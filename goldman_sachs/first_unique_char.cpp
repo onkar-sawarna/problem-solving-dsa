@@ -1,3 +1,4 @@
+// Question: Return the index of the first character that appears only once in a string, or -1 if no such character exists.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: What is the string after the reversals and the insertions at the front or the back?
 #include <bits/stdc++.h>
 using namespace std;
 

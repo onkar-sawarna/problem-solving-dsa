@@ -1,3 +1,4 @@
+// Question: Starting from an all-white row, how many contiguous black segments are there after each cell flip?
 #include <bits/stdc++.h>
 using namespace std;
 

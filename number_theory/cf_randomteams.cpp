@@ -1,3 +1,4 @@
+// Question: What are the minimum and maximum numbers of friendships when n students are divided into m non-empty teams?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

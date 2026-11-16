@@ -1,3 +1,4 @@
+// Question: What is the sum of the powers of two from 2^1 through 2^n?
 #include <iostream>
 using namespace std;
 #define int long long

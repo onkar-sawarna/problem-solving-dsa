@@ -1,3 +1,4 @@
+// Question: Split the array into contiguous segments so the XOR of the bitwise OR of each segment is minimized.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

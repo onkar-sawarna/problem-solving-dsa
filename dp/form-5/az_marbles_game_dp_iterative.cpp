@@ -1,3 +1,4 @@
+// Question: Can the first player force a win with two piles of marbles, if a move removes any positive number from one pile or the same number from both, and the player who cannot move loses?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

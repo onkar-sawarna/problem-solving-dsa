@@ -1,3 +1,4 @@
+// Question: For each start, how far is the nearest exit, which exit is it, and how many shortest paths reach the closest starts?
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 100;

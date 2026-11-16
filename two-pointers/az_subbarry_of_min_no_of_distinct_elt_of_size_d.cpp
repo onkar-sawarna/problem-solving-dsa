@@ -1,3 +1,4 @@
+// Question: What is the fewest distinct values in any subarray of length d?
 #include <bits/stdc++.h>
 using namespace std;
 

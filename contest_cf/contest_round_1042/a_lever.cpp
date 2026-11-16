@@ -1,3 +1,4 @@
+// Question: How many iterations does the lever run on a and b before it can no longer decrease an entry of a that is still greater than b?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

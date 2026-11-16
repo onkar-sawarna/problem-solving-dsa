@@ -1,3 +1,4 @@
+// Question: Which ranges should you overwrite with the XOR of that range so that every element becomes zero?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

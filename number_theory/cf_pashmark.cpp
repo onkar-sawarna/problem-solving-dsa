@@ -1,3 +1,4 @@
+// Question: What is the largest beauty difference between two flowers, and how many pairs have that difference?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

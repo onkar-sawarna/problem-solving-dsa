@@ -1,3 +1,4 @@
+// Question: What array, if you keep a value only when it is at least the previous one, produces the given sequence?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

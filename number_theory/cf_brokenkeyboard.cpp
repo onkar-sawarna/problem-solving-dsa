@@ -1,3 +1,4 @@
+// Question: How many substrings of the string can be typed using only the given working keys?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

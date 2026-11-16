@@ -1,3 +1,4 @@
+// Question: How many attacks are needed to defeat a monster of health H that splits into two monsters of half its health, rounded down?
 // #include <bits/stdc++.h>
 // using namespace std;
 // #define int long long

@@ -1,3 +1,4 @@
+// Question: Is every uppercase letter after the first character of s immediately preceded by a character that appears in t?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

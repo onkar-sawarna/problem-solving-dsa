@@ -1,3 +1,4 @@
+// Question: What is the fewest times you can add 1 to a prefix and subtract 1 from the suffix to make the array no longer non-decreasing?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

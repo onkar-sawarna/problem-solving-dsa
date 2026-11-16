@@ -1,3 +1,4 @@
+// Question: What is the sum of all positive multiples of 3 or 5 that are strictly less than n?
 #include <iostream>
 
 long long sumDivisibleBy(long long n, long long a) {

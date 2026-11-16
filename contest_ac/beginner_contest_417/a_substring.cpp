@@ -1,3 +1,4 @@
+// Question: What remains of the string after the first a characters and the last b characters are removed?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

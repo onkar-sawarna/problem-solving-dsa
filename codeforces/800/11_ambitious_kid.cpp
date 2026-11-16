@@ -1,3 +1,4 @@
+// Question: What is the minimum number of steps toward zero needed to make at least one element equal to zero?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

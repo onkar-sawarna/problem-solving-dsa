@@ -1,3 +1,4 @@
+// Question: Can you color every element red or blue, using both colors, so the two color sums have the same parity?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

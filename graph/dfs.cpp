@@ -1,3 +1,4 @@
+// Question: Which connected component does each node belong to, and how many nodes does each component contain?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

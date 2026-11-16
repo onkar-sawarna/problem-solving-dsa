@@ -1,3 +1,4 @@
+// Question: What is the most coins you can finish with if a casino can be played only while your coins lie between its bounds, and playing sets your coins to its payout?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

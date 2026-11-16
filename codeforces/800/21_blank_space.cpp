@@ -1,3 +1,4 @@
+// Question: What is the length of the longest contiguous block of zeros?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: What is the shortest string this binary string could have started as, if it grew by repeatedly adding opposite bits at both ends?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

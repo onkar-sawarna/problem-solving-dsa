@@ -1,3 +1,4 @@
+// Question: What is the largest h such that at least h of the papers have at least h citations?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

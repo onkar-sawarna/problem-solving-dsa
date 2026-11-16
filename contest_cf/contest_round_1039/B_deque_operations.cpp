@@ -1,3 +1,4 @@
+// Question: What sequence of left and right removals turns the permutation into an array with no five strictly increasing or strictly decreasing elements in a row?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

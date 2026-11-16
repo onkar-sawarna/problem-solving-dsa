@@ -1,3 +1,4 @@
+// Question: Which names received the most votes, in lexicographical order?
 
 #include <bits/stdc++.h>
 using namespace std;

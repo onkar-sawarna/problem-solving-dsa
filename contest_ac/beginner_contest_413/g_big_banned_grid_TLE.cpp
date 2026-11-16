@@ -1,3 +1,4 @@
+// Question: Can you walk from the top-left cell to the bottom-right cell of an H by W grid without stepping on a banned cell?
 #include <bits/stdc++.h>
 using namespace std;
 

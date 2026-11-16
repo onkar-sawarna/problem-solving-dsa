@@ -1,3 +1,4 @@
+// Question: What is the fewest distinct values in an array whose neighboring comparisons match the given string of < and > signs?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: Can you rearrange the array so that some two adjacent elements have a gcd of at most 2?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

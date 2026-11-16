@@ -1,3 +1,4 @@
+// Question: What is the minimum number of moves, and the sequence of those moves, to transfer n disks from peg 1 to peg 3?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

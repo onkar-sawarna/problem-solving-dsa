@@ -1,3 +1,4 @@
+// Question: What is the smallest MEX among all contiguous windows of length m?
 #include<bits/stdc++.h>
 using namespace std;
 

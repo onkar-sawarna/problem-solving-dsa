@@ -1,3 +1,4 @@
+// Question: What permutation adds with the given one to the same value in every position?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: What string do the character runs expand to, or is that expansion longer than 100 characters?
 #include <bits/stdc++.h>
 using namespace std;
 

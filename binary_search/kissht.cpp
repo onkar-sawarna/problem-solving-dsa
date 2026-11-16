@@ -1,3 +1,4 @@
+// Question: What is the earliest day on which m bouquets of k adjacent flowers can be made?
 
 
 // bool canMakeBouquets(int day,vector<int>& bloomDay,int m,int k){

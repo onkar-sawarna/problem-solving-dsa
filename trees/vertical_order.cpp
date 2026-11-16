@@ -1,3 +1,4 @@
+// Question: How should the binary tree's values be listed when grouped by vertical column from left to right?
 
 #include <bits/stdc++.h>
 using namespace std;

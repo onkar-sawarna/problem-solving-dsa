@@ -1,3 +1,4 @@
+// Question: What grid is produced by drawing the given n by n pattern of dots and asterisks at fractal level k?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

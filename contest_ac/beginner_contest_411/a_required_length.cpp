@@ -1,3 +1,4 @@
+// Question: Is the password at least l characters long?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

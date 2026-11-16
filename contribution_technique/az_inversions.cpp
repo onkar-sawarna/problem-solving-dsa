@@ -1,3 +1,4 @@
+// Question: Find the sum, over every subarray, of the number of inversions in that subarray.
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

@@ -1,3 +1,4 @@
+// Question: How many up-right diagonal moves and left moves does it take to reach the destination, or is the trip impossible?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

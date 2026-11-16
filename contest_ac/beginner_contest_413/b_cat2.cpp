@@ -1,3 +1,4 @@
+// Question: How many distinct strings can be formed by concatenating two different strings from the list?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

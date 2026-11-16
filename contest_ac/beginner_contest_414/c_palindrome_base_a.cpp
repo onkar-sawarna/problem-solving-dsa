@@ -1,3 +1,4 @@
+// Question: What is the sum of every integer from 1 to N that is a palindrome in both base 10 and base A?
 #include <bits/stdc++.h>
 using namespace std;
 

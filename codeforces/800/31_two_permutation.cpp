@@ -1,3 +1,4 @@
+// Question: Do there exist two permutations of length n whose longest prefixes that are permutations of 1 through that length have lengths a and b?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: What is the smallest non-negative integer that shares a decimal digit with x?
 #include <bits/stdc++.h>
 using namespace std;
 

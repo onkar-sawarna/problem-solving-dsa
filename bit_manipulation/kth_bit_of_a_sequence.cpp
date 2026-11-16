@@ -1,3 +1,4 @@
+// Question: Find the kth bit in the string formed by writing the positive integers in binary one after another.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

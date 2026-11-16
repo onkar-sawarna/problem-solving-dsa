@@ -1,3 +1,4 @@
+// Question: What is the length of the longest common subsequence of the three strings?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

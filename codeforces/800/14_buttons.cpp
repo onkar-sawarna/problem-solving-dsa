@@ -1,3 +1,4 @@
+// Question: Anna and Katie take turns pressing a red or shared button and a blue or shared button, Anna first; who presses the last button?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

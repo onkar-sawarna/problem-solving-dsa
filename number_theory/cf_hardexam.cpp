@@ -1,3 +1,4 @@
+// Question: What is the last digit of 1378 raised to the power n?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

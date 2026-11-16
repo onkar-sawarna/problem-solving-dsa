@@ -1,3 +1,4 @@
+// Question: Which integers x produce n when one or more zeros are appended to x and that new integer is added to x?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

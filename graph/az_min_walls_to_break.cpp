@@ -1,3 +1,4 @@
+// Question: What is the fewest walls that must be broken to go from S to E?
 #include<bits/stdc++.h>
 using namespace std;
 const int INF = 100;

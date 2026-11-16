@@ -1,3 +1,4 @@
+// Question: What is the largest k such that swapping elements k positions apart can sort the permutation?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

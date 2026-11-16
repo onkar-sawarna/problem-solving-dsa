@@ -1,3 +1,4 @@
+// Question: Can you write n as a sum of integers from 1 to k, none of them equal to x, and if so what is one such sum?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

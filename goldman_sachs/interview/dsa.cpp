@@ -1,3 +1,4 @@
+// Question: Return the starting index and length of the longest run of the same character in a string.
 #include <bits/stdc++.h>
 using namespace std;
 

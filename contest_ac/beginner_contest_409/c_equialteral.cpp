@@ -1,3 +1,4 @@
+// Question: How many equilateral triangles can be formed from the points placed on a circle of circumference L?
 #include <bits/stdc++.h>
 using namespace std;
 

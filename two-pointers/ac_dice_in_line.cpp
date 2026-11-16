@@ -1,3 +1,4 @@
+// Question: What is the maximum expected sum from rolling k consecutive dice once each?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

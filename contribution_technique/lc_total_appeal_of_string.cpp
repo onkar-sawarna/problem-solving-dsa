@@ -1,3 +1,4 @@
+// Question: Return the total appeal of all substrings, where the appeal of a string is how many distinct characters it contains.
 #include <bits/stdc++.h>
 using namespace std;
 

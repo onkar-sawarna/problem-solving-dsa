@@ -1,3 +1,4 @@
+// Question: Can you delete at most k characters and rearrange what remains into a palindrome?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

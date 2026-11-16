@@ -1,3 +1,4 @@
+// Question: What is the minimum cost to destroy every trash bag if a bag heavier than c costs one coin, a lighter bag is free, and every remaining bag then doubles in weight?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

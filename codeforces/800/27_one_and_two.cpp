@@ -1,3 +1,4 @@
+// Question: Where can you split this array of ones and twos so the product of the left part equals the product of the right part?
 #include <bits/stdc++.h>
 using namespace std;
 

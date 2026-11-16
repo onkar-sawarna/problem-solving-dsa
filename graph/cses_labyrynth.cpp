@@ -1,3 +1,4 @@
+// Question: What is the shortest route from A to B through the open cells of the labyrinth?
 #include <bits/stdc++.h>
 using namespace std;
 

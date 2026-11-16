@@ -1,3 +1,4 @@
+// Question: How many index pairs i < j satisfy j - i = a[i] + a[j]?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

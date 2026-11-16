@@ -1,3 +1,4 @@
+// Question: Which length-n array alternates in sign, keeps every subarray of length at least 2 positive in sum, and has the lexicographically smallest absolute values?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

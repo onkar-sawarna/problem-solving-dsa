@@ -1,3 +1,4 @@
+// Question: What is the shortest time in which the machines can produce t products?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

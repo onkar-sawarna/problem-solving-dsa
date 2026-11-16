@@ -1,3 +1,4 @@
+// Question: Print every distinct permutation of the given integers.
 #include <bits/stdc++.h>
 using namespace std;
 

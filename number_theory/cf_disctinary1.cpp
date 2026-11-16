@@ -1,3 +1,4 @@
+// Question: What is the 1-based index of a two-letter word in the dictionary of words whose letters differ?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

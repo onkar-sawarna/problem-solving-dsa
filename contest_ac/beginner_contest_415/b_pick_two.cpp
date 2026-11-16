@@ -1,3 +1,4 @@
+// Question: What are the 1-based positions of the non-dot characters when they are paired from left to right?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

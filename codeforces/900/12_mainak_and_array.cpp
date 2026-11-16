@@ -1,3 +1,4 @@
+// Question: After one cyclic rotation of a single subarray, what is the largest possible difference between the last element and the first?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

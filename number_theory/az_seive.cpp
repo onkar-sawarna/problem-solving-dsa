@@ -1,3 +1,4 @@
+// Question: What is the prime factorization of the given integer?
 #include <iostream>
 #include <vector>
 

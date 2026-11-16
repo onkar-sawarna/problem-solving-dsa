@@ -1,3 +1,4 @@
+// Question: How many paths go from the top-left to the bottom-right of the grid, moving only right or down and avoiding traps?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

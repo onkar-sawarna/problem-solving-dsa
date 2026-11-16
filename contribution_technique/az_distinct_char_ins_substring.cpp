@@ -1,3 +1,4 @@
+// Question: Find the sum, over every substring, of the number of distinct characters in that substring.
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

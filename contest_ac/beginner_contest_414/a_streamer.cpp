@@ -1,3 +1,4 @@
+// Question: How many of the broadcast intervals completely cover the window from l to r?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

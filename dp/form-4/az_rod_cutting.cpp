@@ -1,3 +1,4 @@
+// Question: What is the minimum cost to make every required cut on the rod, where each cut costs the length of the segment being cut?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

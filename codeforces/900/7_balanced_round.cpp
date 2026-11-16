@@ -1,3 +1,4 @@
+// Question: What is the minimum number of difficulties to remove so that, once sorted, successive remaining values differ by at most k?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

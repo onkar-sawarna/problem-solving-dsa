@@ -1,3 +1,4 @@
+// Question: How many times must you append x to itself before s becomes a substring of x, or is that impossible?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

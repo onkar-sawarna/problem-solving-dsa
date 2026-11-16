@@ -1,3 +1,4 @@
+// Question: How many paths go from the top-left to the bottom-right of the grid, moving only down or right and avoiding blocked cells?
 #include <bits/stdc++.h>
 using namespace std;
 

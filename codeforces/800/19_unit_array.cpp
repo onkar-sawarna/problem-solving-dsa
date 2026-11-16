@@ -1,3 +1,4 @@
+// Question: How many sign flips are needed so an array of 1 and -1 has a nonnegative sum and a product of 1?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: Add integers from a data stream and report the median of all numbers added so far.
 #include <iostream>
 #include <queue>
 using namespace std;

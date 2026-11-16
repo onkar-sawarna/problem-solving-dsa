@@ -1,3 +1,4 @@
+// Question: Is there a contiguous subarray whose most frequent value is k?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

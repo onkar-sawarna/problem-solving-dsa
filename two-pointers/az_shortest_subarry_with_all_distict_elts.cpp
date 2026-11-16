@@ -1,3 +1,4 @@
+// Question: What is the length of the shortest subarray that contains every distinct value in the array?
 #include <bits/stdc++.h>
 using namespace std;
 

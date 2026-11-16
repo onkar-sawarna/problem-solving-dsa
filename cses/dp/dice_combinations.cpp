@@ -1,3 +1,4 @@
+// Question: How many ways can throws of a six-sided die add up to n?
 #include <bits/stdc++.h>
 using namespace std;
 

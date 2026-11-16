@@ -1,3 +1,4 @@
+// Question: Does the value x appear in the given list of n integers?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

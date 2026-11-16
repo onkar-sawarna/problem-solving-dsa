@@ -1,3 +1,4 @@
+// Question: How many of the tasks have a score strictly below the given border?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

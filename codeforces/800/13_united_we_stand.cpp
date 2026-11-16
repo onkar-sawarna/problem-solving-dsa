@@ -1,3 +1,4 @@
+// Question: Can you split the array into two nonempty groups so that no element of the second group divides any element of the first?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

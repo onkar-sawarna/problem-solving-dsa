@@ -1,3 +1,4 @@
+// Question: What string results when each character of b is inserted at the front of a if the instruction is V, and at the back if it is D?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

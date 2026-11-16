@@ -1,3 +1,4 @@
+// Question: What is the final order when the row starts as n and each earlier index joins the left end on R or the right end on L?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

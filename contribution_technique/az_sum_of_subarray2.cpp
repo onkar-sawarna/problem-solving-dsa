@@ -1,3 +1,4 @@
+// Question: Find the sum of all subarray sums.
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

@@ -1,3 +1,4 @@
+// Question: What is the fewest operations needed to make every pair of adjacent elements have different parity?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

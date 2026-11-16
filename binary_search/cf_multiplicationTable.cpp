@@ -1,3 +1,4 @@
+// Question: What is the k-th smallest number in an n by m multiplication table?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

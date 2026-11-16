@@ -1,3 +1,4 @@
+// Question: In how many ways can 3n children, split into groups of three, each receive 1, 2, or 3 candies so that at least one group does not sum to 6, modulo 10^9+7?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

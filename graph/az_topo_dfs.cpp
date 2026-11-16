@@ -1,3 +1,4 @@
+// Question: What is the longest path in this directed graph, and what is one topological order of its nodes?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

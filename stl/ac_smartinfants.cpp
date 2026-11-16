@@ -1,3 +1,4 @@
+// Question: After each child moves to another school, what is the smallest of the non-empty schools' highest ratings?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

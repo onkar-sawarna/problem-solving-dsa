@@ -1,3 +1,4 @@
+// Question: For a queue that grows by appending several copies of one value, what is the sum of the values removed by each removal of a prefix?
 #include <bits/stdc++.h>
 using namespace std;
 

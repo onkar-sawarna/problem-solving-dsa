@@ -1,3 +1,4 @@
+// Question: Starting with n bottles, what is the most stickers you can earn by emptying them and trading empty bottles for fewer full ones?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: Which pegs does the k-th move travel between when solving the Tower of Hanoi for the given number of disks?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

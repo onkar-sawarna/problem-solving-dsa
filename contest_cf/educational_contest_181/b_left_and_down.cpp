@@ -1,3 +1,4 @@
+// Question: What is the minimum cost to move from (a, b) to (0, 0) if each step subtracts dx and dy between 0 and k, and only the first use of a pair costs 1?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: What is each node's distance from the smallest-numbered node in its connected component?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

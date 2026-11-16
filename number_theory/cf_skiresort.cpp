@@ -1,3 +1,4 @@
+// Question: How many contiguous segments of length at least k have every temperature at most q?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

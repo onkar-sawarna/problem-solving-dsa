@@ -1,3 +1,4 @@
+// Question: If every element from l to r were replaced by k, would the sum of the array be odd?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: Find the sum of the products of all contiguous subarrays.
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long 

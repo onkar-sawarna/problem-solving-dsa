@@ -1,3 +1,4 @@
+// Question: If every ordered concatenation of k strings chosen from the n strings, repeats allowed, is sorted, which one is x-th?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

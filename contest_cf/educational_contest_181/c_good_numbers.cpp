@@ -1,3 +1,4 @@
+// Question: How many integers from l to r have only prime factors with at least two digits?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

@@ -1,3 +1,4 @@
+// Question: What is C(n, r) modulo 10^9+7 for each query?
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -1,3 +1,4 @@
+// Question: What is the shortest chain of dominoes from the first to the last if a fallen domino can topple another only when that other is at most twice as large?
 #include <bits/stdc++.h>
 using namespace std;
 

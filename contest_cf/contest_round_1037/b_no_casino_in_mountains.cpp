@@ -1,3 +1,4 @@
+// Question: How many hikes of k consecutive clear days can you take if each hike must be followed by one rest day?
 #include <bits/stdc++.h>
 using namespace std;
 

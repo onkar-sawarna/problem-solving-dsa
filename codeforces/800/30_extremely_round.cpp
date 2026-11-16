@@ -1,3 +1,4 @@
+// Question: How many integers from 1 to n have exactly one nonzero digit?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

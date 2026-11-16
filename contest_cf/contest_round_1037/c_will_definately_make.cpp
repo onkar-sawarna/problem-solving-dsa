@@ -1,3 +1,4 @@
+// Question: Can you reach a tallest tower before rising water covers you, if moving between two towers takes seconds equal to their height difference?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

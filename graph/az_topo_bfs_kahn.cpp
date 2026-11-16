@@ -1,3 +1,4 @@
+// Question: What is a topological order of the directed graph, or does a cycle make one impossible?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

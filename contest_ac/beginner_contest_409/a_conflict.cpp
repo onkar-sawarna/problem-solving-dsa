@@ -1,3 +1,4 @@
+// Question: Is there a day on which both schedules are free?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

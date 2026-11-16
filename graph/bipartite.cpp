@@ -1,3 +1,4 @@
+// Question: Can the undirected graph be colored with two colors so that every edge joins different colors?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

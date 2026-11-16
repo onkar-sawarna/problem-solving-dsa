@@ -1,3 +1,4 @@
+// Question: For each starting mood, what is the mood after every present, which adds a while the mood is at most p and otherwise subtracts b down to zero?
 #include <bits/stdc++.h>
 using namespace std;
 #define IOS                       \

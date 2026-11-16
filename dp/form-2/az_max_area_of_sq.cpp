@@ -1,3 +1,4 @@
+// Question: What is the area of the largest square of ones in the binary grid?
 #include <bits/stdc++.h>
 using namespace std;
 
