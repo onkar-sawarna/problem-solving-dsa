@@ -28,3 +28,5 @@ name the leftover case or the state, when there is one.
 - Time and space use the variables from that problem. A sort is `O(n log n)`. A DP table states both dimensions.
 - Pattern names the branch and the variant.
 - The explanation describes this file. Do not repeat a sentence, and do not change the code above the note.
+
+When a file is added under `leetcode-150/`, also update `leetcode-150/patterns/`. Add the question under the pattern it uses. If the idea is new, create the next numbered pattern file and one row in `patterns/README.md`.
